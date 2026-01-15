@@ -13,6 +13,8 @@ import ProductDetail from './pages/ProductDetail';
 import Pricing from './pages/Pricing';
 import Checkout from './pages/Checkout';
 import Analytics from './pages/Analytics';
+import ChatbotMaker from './pages/ChatbotMaker';
+import ChatbotView from './pages/ChatbotView';
 import IntelligenceField from './components/IntelligenceField';
 
 const PageWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => (
@@ -46,16 +48,20 @@ const App: React.FC = () => {
       <IntelligenceField />
       <Navbar />
       <AnimatePresence mode="wait">
-        <Routes location={pathname} key={pathname}>
-          <Route path="/" element={<PageWrapper><Home /></PageWrapper>} />
-          <Route path="/login" element={<PageWrapper><Login /></PageWrapper>} />
-          <Route path="/about" element={<PageWrapper><About /></PageWrapper>} />
-          <Route path="/blog" element={<PageWrapper><Blog /></PageWrapper>} />
-          <Route path="/products/:id" element={<PageWrapper><ProductDetail /></PageWrapper>} />
-          <Route path="/pricing" element={<PageWrapper><Pricing /></PageWrapper>} />
-          <Route path="/checkout" element={<PageWrapper><Checkout /></PageWrapper>} />
-          <Route path="/analytics" element={<PageWrapper><Analytics /></PageWrapper>} />
-        </Routes>
+        <motion.div key={pathname}>
+          <Routes location={pathname}>
+            <Route path="/" element={<PageWrapper><Home /></PageWrapper>} />
+            <Route path="/login" element={<PageWrapper><Login /></PageWrapper>} />
+            <Route path="/about" element={<PageWrapper><About /></PageWrapper>} />
+            <Route path="/blog" element={<PageWrapper><Blog /></PageWrapper>} />
+            <Route path="/products/:id" element={<PageWrapper><ProductDetail /></PageWrapper>} />
+            <Route path="/pricing" element={<PageWrapper><Pricing /></PageWrapper>} />
+            <Route path="/checkout" element={<PageWrapper><Checkout /></PageWrapper>} />
+            <Route path="/analytics" element={<PageWrapper><Analytics /></PageWrapper>} />
+            <Route path="/converse" element={<PageWrapper><ChatbotMaker /></PageWrapper>} />
+            <Route path="/chatbot/:id" element={<PageWrapper><ChatbotView /></PageWrapper>} />
+          </Routes>
+        </motion.div>
       </AnimatePresence>
       <Footer />
     </div>

@@ -4,9 +4,9 @@ import { useLocation } from 'react-router';
 import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
 
 const LogoIcon = () => (
-  <img 
-    src="entropy_logo.png" 
-    alt="Entropy AI Logo" 
+  <img
+    src="entropy_logo.png"
+    alt="Entropy AI Logo"
     className="w-8 h-8 object-contain"
     onError={(e) => {
       e.currentTarget.style.display = 'none';
@@ -41,11 +41,12 @@ const Navbar: React.FC = () => {
     { name: 'Journey', path: '/' },
     { name: 'Agents', path: '/pricing' },
     { name: 'Analytics', path: '/analytics' },
+    { name: 'Converse', path: '/converse' },
     { name: 'Logs', path: '/blog' },
   ];
 
   return (
-    <motion.nav 
+    <motion.nav
       variants={{
         visible: { y: 0, opacity: 1 },
         hidden: { y: -100, opacity: 0 }
@@ -62,20 +63,19 @@ const Navbar: React.FC = () => {
 
         <div className="flex items-center gap-10">
           {navLinks.map((link) => (
-            <Link 
-              key={link.path} 
+            <Link
+              key={link.path}
               to={link.path}
-              className={`text-[10px] font-black uppercase tracking-[0.3em] transition-all hover:text-[#4FD1FF] ${
-                location.pathname === link.path ? 'text-[#4FD1FF]' : 'text-gray-400'
-              }`}
+              className={`text-[10px] font-black uppercase tracking-[0.3em] transition-all hover:text-[#4FD1FF] ${location.pathname === link.path ? 'text-[#4FD1FF]' : 'text-gray-400'
+                }`}
             >
               {link.name}
             </Link>
           ))}
         </div>
 
-        <Link 
-          to="/login" 
+        <Link
+          to="/login"
           className="bg-white text-black px-8 py-3 rounded-full text-[10px] font-black tracking-[0.4em] hover:bg-[#4FD1FF] transition-all uppercase shadow-lg"
         >
           Access
