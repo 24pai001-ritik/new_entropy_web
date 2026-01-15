@@ -1,7 +1,7 @@
 
 import React, { useEffect } from 'react';
-// Explicitly import core routing from react-router to resolve type visibility issues
-import { Routes, Route, useLocation } from 'react-router';
+// Explicitly import { useParams } from 'react-router-dom'; to resolve type visibility issues
+import { Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -15,6 +15,7 @@ import Checkout from './pages/Checkout';
 import Analytics from './pages/Analytics';
 import ChatbotMaker from './pages/ChatbotMaker';
 import ChatbotView from './pages/ChatbotView';
+import VideoMaker from './pages/VideoMaker';
 import IntelligenceField from './components/IntelligenceField';
 
 const PageWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => (
@@ -30,7 +31,8 @@ const PageWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => (
 );
 
 const App: React.FC = () => {
-  const { pathname, hash } = useLocation();
+  const location = useLocation();
+  const { pathname, hash } = location;
 
   useEffect(() => {
     if (hash) {
@@ -49,7 +51,7 @@ const App: React.FC = () => {
       <Navbar />
       <AnimatePresence mode="wait">
         <motion.div key={pathname}>
-          <Routes location={pathname}>
+          <Routes location={location}>
             <Route path="/" element={<PageWrapper><Home /></PageWrapper>} />
             <Route path="/login" element={<PageWrapper><Login /></PageWrapper>} />
             <Route path="/about" element={<PageWrapper><About /></PageWrapper>} />
@@ -60,6 +62,7 @@ const App: React.FC = () => {
             <Route path="/analytics" element={<PageWrapper><Analytics /></PageWrapper>} />
             <Route path="/converse" element={<PageWrapper><ChatbotMaker /></PageWrapper>} />
             <Route path="/chatbot/:id" element={<PageWrapper><ChatbotView /></PageWrapper>} />
+            <Route path="/video-maker" element={<PageWrapper><VideoMaker /></PageWrapper>} />
           </Routes>
         </motion.div>
       </AnimatePresence>

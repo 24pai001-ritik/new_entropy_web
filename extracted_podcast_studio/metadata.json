@@ -1,0 +1,5 @@
+{
+  "name": "Gemini Podcast Studio",
+  "description": "Generate realistic AI podcasts from any text or topic using Gemini Flash and Gemini TTS.",
+  "requestFramePermissions": []
+}

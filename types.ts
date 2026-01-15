@@ -31,3 +31,17 @@ export interface PricingPlan {
   features: string[];
   recommended?: boolean;
 }
+
+export interface ImpactfulWord {
+  text: string;
+  start: number;
+  end: number;
+  emotionalIntent?: string;
+}
+
+export interface ImpactfulImage {
+  url: string;
+  word: string;
+  start: number;
+  end: number;
+}
