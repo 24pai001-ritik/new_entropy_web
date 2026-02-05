@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 import Logo3D from '../components/Logo3D';
 import { PRODUCTS, WHY_US } from '../constants';
 
-const FeatureCard = ({ item, index }: { item: any; index: number }) => (
-  <motion.div 
+const FeatureCard = ({ item, index }: { item: any; index: number;[key: string]: any }) => (
+  <motion.div
     initial={{ opacity: 0, y: 30 }}
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true }}
@@ -44,7 +44,7 @@ const Home: React.FC = () => {
       <section className="min-h-screen flex items-center justify-center pt-20 px-6 overflow-hidden">
         <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="relative z-20">
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={isReady ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.3 }}
@@ -53,26 +53,36 @@ const Home: React.FC = () => {
               <Activity className="w-3 h-3 animate-pulse" />
               Operational Efficiency V.1.0
             </motion.div>
-            
-            <motion.h1 
+
+            <motion.h1
               initial={{ opacity: 0, y: 40 }}
               animate={isReady ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 1, delay: 0.5 }}
-              className="text-6xl md:text-8xl lg:text-9xl font-black mb-10 leading-[0.85] tracking-tighter uppercase"
+              className="text-5xl sm:text-6xl md:text-8xl lg:text-9xl font-black mb-6 md:mb-10 leading-[0.85] tracking-tighter uppercase"
             >
               Master the <br /> <span className="text-gradient">Entropy.</span>
             </motion.h1>
 
-            <motion.p 
+            {/* Mobile Logo - Center of attraction */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={isReady ? { opacity: 1, scale: 1 } : {}}
+              transition={{ duration: 1, delay: 0.6 }}
+              className="lg:hidden flex justify-center py-8"
+            >
+              <Logo3D size={320} triggerLoop={true} />
+            </motion.div>
+
+            <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={isReady ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.7 }}
-              className="text-xl text-gray-400 mb-14 max-w-xl leading-relaxed font-medium"
+              className="text-lg md:text-xl text-gray-400 mb-10 md:mb-14 max-w-xl leading-relaxed font-medium"
             >
               Building the next generation of autonomous agents for Indian MSMEs. We resolve operational chaos into structural intelligence using Reinforcement Learning.
             </motion.p>
 
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               animate={isReady ? { opacity: 1, scale: 1 } : {}}
               transition={{ duration: 0.8, delay: 0.9 }}
@@ -87,8 +97,8 @@ const Home: React.FC = () => {
             </motion.div>
           </div>
 
-          <div className="flex justify-center items-center relative scale-110 lg:scale-125">
-             <Logo3D size={550} triggerLoop={true} />
+          <div className="hidden lg:flex justify-center items-center relative scale-110 lg:scale-125">
+            <Logo3D size={550} triggerLoop={true} />
           </div>
         </div>
       </section>
@@ -98,8 +108,8 @@ const Home: React.FC = () => {
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-end gap-10 mb-24">
             <div className="max-w-3xl">
-              <span className="text-[10px] font-black text-[#4FD1FF] tracking-[0.8em] uppercase mb-6 block opacity-50">System Architecture</span>
-              <h2 className="text-5xl md:text-7xl font-black tracking-tighter uppercase leading-none">The Reward <br /> <span className="text-gradient">Mechanism.</span></h2>
+              <span className="text-[10px] font-black text-[#4FD1FF] tracking-[0.8em] uppercase mb-4 md:mb-6 block opacity-50">System Architecture</span>
+              <h2 className="text-4xl md:text-7xl font-black tracking-tighter uppercase leading-none">The Reward <br /> <span className="text-gradient">Mechanism.</span></h2>
             </div>
             <p className="text-xl text-gray-500 max-w-sm font-bold leading-relaxed border-l-2 border-[#4FD1FF]/20 pl-8">
               Every interaction is a learning opportunity. Our RL loops optimize for business growth in real-time.
@@ -118,15 +128,15 @@ const Home: React.FC = () => {
       <section className="py-40 px-6 bg-black/20">
         <div className="container mx-auto">
           <div className="mb-24 text-center">
-             <h2 className="text-6xl md:text-9xl font-black tracking-tighter uppercase leading-none opacity-10 absolute left-0 right-0 -translate-y-1/2 pointer-events-none">Agents</h2>
-             <span className="text-[10px] font-black text-[#4FD1FF] tracking-[1em] uppercase mb-6 block">Ready to Deploy</span>
-             <h2 className="text-5xl md:text-7xl font-black tracking-tighter uppercase">Autonomous Nodes.</h2>
+            <h2 className="text-4xl md:text-9xl font-black tracking-tighter uppercase leading-none opacity-10 absolute left-0 right-0 -translate-y-1/2 pointer-events-none">Agents</h2>
+            <span className="text-[10px] font-black text-[#4FD1FF] tracking-[1em] uppercase mb-4 md:mb-6 block">Ready to Deploy</span>
+            <h2 className="text-4xl md:text-7xl font-black tracking-tighter uppercase">Autonomous Nodes.</h2>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
             {PRODUCTS.map((product, i) => (
               <Link key={product.id} to={`/products/${product.id}`} className="group relative block">
-                <motion.div 
+                <motion.div
                   initial={{ opacity: 0, scale: 0.95 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
@@ -170,13 +180,13 @@ const Home: React.FC = () => {
       {/* FINAL CALL - Cinematic Ending */}
       <section className="py-60 px-6 text-center overflow-hidden">
         <div className="container mx-auto">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 1 }}
           >
-            <h2 className="text-7xl md:text-[12rem] font-black tracking-tighter uppercase leading-[0.8] mb-16">Enter <br /> <span className="text-gradient">Bharat.</span></h2>
+            <h2 className="text-5xl md:text-[12rem] font-black tracking-tighter uppercase leading-[0.8] mb-12 md:mb-16">Enter <br /> <span className="text-gradient">Bharat.</span></h2>
             <p className="text-2xl text-gray-500 max-w-3xl mx-auto font-bold mb-20 opacity-80 leading-relaxed">
               We're scaling the backbone of the Indian economy. The journey from chaos to intelligence starts with a single node.
             </p>
@@ -186,7 +196,7 @@ const Home: React.FC = () => {
           </motion.div>
         </div>
       </section>
-      
+
       <div className="h-40" />
     </div>
   );

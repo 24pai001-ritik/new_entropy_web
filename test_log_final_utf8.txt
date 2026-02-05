@@ -1,0 +1,10 @@
+﻿≡ƒöæ API Key check: Detected
+≡ƒÄÖ∩╕Å Starting Independent Voice Verification...
+
+≡ƒº¬ Testing Gemini Native TTS (gemini-2.5-flash-preview-tts) with REDESIGNED Directorial Prompting...
+Γ£à Gemini TTS Success! Saved to: C:\Users\DELL\Downloads\rl-agentic-ai-for-msmes (9)\server\test_output_gemini.mp3
+
+≡ƒº¬ Testing Google Fallback TTS (Direct HTTP)...
+Γ£à Google TTS Success! Saved to: C:\Users\DELL\Downloads\rl-agentic-ai-for-msmes (9)\server\test_output_google.mp3
+
+Test Complete.

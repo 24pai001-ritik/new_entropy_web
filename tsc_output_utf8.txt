@@ -1,0 +1,1406 @@
+﻿gemini_voice.ts(1,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(1,6): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(1,9): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(2,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(10,1): error TS1435: Unknown keyword or identifier. Did you mean 'get'?
+gemini_voice.ts(10,5): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(13,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(16,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(18,20): error TS1005: ';' expected.
+gemini_voice.ts(22,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(22,5): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(22,12): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(22,16): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(22,20): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(22,30): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(22,35): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(22,41): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(22,46): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(22,53): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(22,61): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(22,80): error TS1005: ';' expected.
+gemini_voice.ts(22,99): error TS1005: ',' expected.
+gemini_voice.ts(22,103): error TS1005: ',' expected.
+gemini_voice.ts(22,121): error TS1005: ';' expected.
+gemini_voice.ts(22,169): error TS1005: ';' expected.
+gemini_voice.ts(22,180): error TS1228: A type predicate is only allowed in return type position for functions and methods.
+gemini_voice.ts(22,205): error TS1005: ';' expected.
+gemini_voice.ts(22,209): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(22,213): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(22,217): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(22,225): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(22,234): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(22,237): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(22,247): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(22,260): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(22,264): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(22,270): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(22,299): error TS1005: ';' expected.
+gemini_voice.ts(22,304): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(22,307): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(22,317): error TS1003: Identifier expected.
+gemini_voice.ts(24,15): error TS1005: ';' expected.
+gemini_voice.ts(25,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(25,5): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(25,9): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(25,20): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(25,28): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(25,33): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(25,40): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(25,51): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(25,60): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(25,68): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(25,72): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(25,88): error TS1005: ';' expected.
+gemini_voice.ts(25,91): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(25,104): error TS1005: '(' expected.
+gemini_voice.ts(25,130): error TS1005: ';' expected.
+gemini_voice.ts(25,141): error TS1005: ';' expected.
+gemini_voice.ts(25,152): error TS1005: ')' expected.
+gemini_voice.ts(25,159): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(25,177): error TS1005: ';' expected.
+gemini_voice.ts(25,181): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(25,186): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(25,208): error TS1005: ';' expected.
+gemini_voice.ts(25,237): error TS1005: ';' expected.
+gemini_voice.ts(25,245): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(25,249): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(25,256): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(25,260): error TS1228: A type predicate is only allowed in return type position for functions and methods.
+gemini_voice.ts(25,263): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(25,276): error TS1005: '(' expected.
+gemini_voice.ts(25,286): error TS1005: ';' expected.
+gemini_voice.ts(25,291): error TS1005: ';' expected.
+gemini_voice.ts(25,299): error TS1005: ')' expected.
+gemini_voice.ts(25,305): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(25,310): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(25,326): error TS1005: '(' expected.
+gemini_voice.ts(25,341): error TS1005: ')' expected.
+gemini_voice.ts(25,349): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(25,354): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(25,360): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(25,387): error TS1005: ';' expected.
+gemini_voice.ts(25,390): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(25,411): error TS1003: Identifier expected.
+gemini_voice.ts(27,1): error TS1435: Unknown keyword or identifier. Did you mean 'this'?
+gemini_voice.ts(27,6): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(27,12): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(27,18): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(27,22): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(27,26): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(27,29): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(27,55): error TS1005: ';' expected.
+gemini_voice.ts(27,75): error TS1005: ';' expected.
+gemini_voice.ts(27,81): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(29,12): error TS1005: ';' expected.
+gemini_voice.ts(29,14): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(29,45): error TS1005: ';' expected.
+gemini_voice.ts(29,59): error TS1003: Identifier expected.
+gemini_voice.ts(30,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(30,8): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(31,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(31,8): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(31,12): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(31,16): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(31,18): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(31,29): error TS1005: ';' expected.
+gemini_voice.ts(31,35): error TS1435: Unknown keyword or identifier. Did you mean 'var iant'?
+gemini_voice.ts(31,48): error TS1005: '(' expected.
+gemini_voice.ts(31,55): error TS1005: ')' expected.
+gemini_voice.ts(31,79): error TS1005: ';' expected.
+gemini_voice.ts(31,96): error TS1005: ';' expected.
+gemini_voice.ts(31,110): error TS1005: ';' expected.
+gemini_voice.ts(31,120): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(31,139): error TS1005: ';' expected.
+gemini_voice.ts(31,165): error TS1005: ';' expected.
+gemini_voice.ts(31,171): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(31,177): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(31,182): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(31,187): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(31,192): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(31,201): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(31,205): error TS1128: Declaration or statement expected.
+gemini_voice.ts(31,209): error TS1128: Declaration or statement expected.
+gemini_voice.ts(33,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(33,5): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(33,9): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(33,14): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(33,17): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(33,24): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(33,27): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(33,32): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(33,36): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(33,47): error TS1005: ';' expected.
+gemini_voice.ts(33,64): error TS1005: ';' expected.
+gemini_voice.ts(33,71): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(33,78): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(33,82): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(35,9): error TS1005: ';' expected.
+gemini_voice.ts(35,11): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(35,15): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(35,22): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(35,41): error TS1005: ';' expected.
+gemini_voice.ts(35,48): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(35,52): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(35,73): error TS1005: ';' expected.
+gemini_voice.ts(35,85): error TS1005: ';' expected.
+gemini_voice.ts(35,87): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(35,96): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(35,101): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(35,104): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(35,117): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(35,126): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(35,129): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(35,148): error TS1005: ';' expected.
+gemini_voice.ts(35,152): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(36,26): error TS1005: ';' expected.
+gemini_voice.ts(37,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(37,4): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(37,12): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(37,17): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(37,37): error TS1005: ';' expected.
+gemini_voice.ts(37,48): error TS1005: ';' expected.
+gemini_voice.ts(37,52): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(37,61): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(37,70): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(37,86): error TS1005: ';' expected.
+gemini_voice.ts(37,91): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(37,93): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(37,106): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(37,118): error TS1005: '(' expected.
+gemini_voice.ts(37,130): error TS1005: ')' expected.
+gemini_voice.ts(37,137): error TS1005: ';' expected.
+gemini_voice.ts(37,201): error TS1002: Unterminated string literal.
+gemini_voice.ts(39,1): error TS1435: Unknown keyword or identifier. Did you mean 'this'?
+gemini_voice.ts(39,6): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(39,14): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(39,20): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(39,24): error TS1435: Unknown keyword or identifier. Did you mean 'out put'?
+gemini_voice.ts(39,31): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(39,37): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(39,42): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(39,57): error TS1005: ';' expected.
+gemini_voice.ts(92,17): error TS1005: ';' expected.
+gemini_voice.ts(93,1): error TS1435: Unknown keyword or identifier. Did you mean 'for'?
+gemini_voice.ts(93,21): error TS1005: ';' expected.
+gemini_voice.ts(93,31): error TS1005: ';' expected.
+gemini_voice.ts(93,141): error TS1005: ';' expected.
+gemini_voice.ts(93,144): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(93,149): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(93,152): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(93,159): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(93,164): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(93,177): error TS1005: '(' expected.
+gemini_voice.ts(93,181): error TS1005: ')' expected.
+gemini_voice.ts(93,186): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(93,204): error TS1005: ';' expected.
+gemini_voice.ts(164,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(164,13): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(164,20): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(164,31): error TS1005: '(' expected.
+gemini_voice.ts(165,1): error TS1005: ')' expected.
+gemini_voice.ts(165,5): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(165,9): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(165,42): error TS1005: ';' expected.
+gemini_voice.ts(165,61): error TS1005: ',' expected.
+gemini_voice.ts(165,70): error TS1005: ',' expected.
+gemini_voice.ts(165,78): error TS1005: ',' expected.
+gemini_voice.ts(165,82): error TS1005: '(' expected.
+gemini_voice.ts(165,87): error TS1005: ';' expected.
+gemini_voice.ts(165,100): error TS1005: ';' expected.
+gemini_voice.ts(165,116): error TS1005: ')' expected.
+gemini_voice.ts(165,124): error TS1005: ';' expected.
+gemini_voice.ts(165,133): error TS1109: Expression expected.
+gemini_voice.ts(165,138): error TS1005: ';' expected.
+gemini_voice.ts(165,155): error TS1005: ';' expected.
+gemini_voice.ts(165,167): error TS1005: ';' expected.
+gemini_voice.ts(167,11): error TS1005: ';' expected.
+gemini_voice.ts(168,33): error TS1002: Unterminated string literal.
+gemini_voice.ts(169,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(169,11): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(169,23): error TS1005: ';' expected.
+gemini_voice.ts(169,27): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(169,33): error TS1002: Unterminated string literal.
+gemini_voice.ts(170,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(170,4): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(170,22): error TS1005: ';' expected.
+gemini_voice.ts(170,38): error TS1005: ';' expected.
+gemini_voice.ts(170,42): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(170,53): error TS1005: '(' expected.
+gemini_voice.ts(170,58): error TS1005: ')' expected.
+gemini_voice.ts(170,58): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(170,163): error TS1002: Unterminated string literal.
+gemini_voice.ts(172,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(172,6): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(172,15): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(172,21): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(172,27): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(172,42): error TS1005: ';' expected.
+gemini_voice.ts(172,51): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(172,57): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(172,65): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(174,11): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(174,13): error TS1128: Declaration or statement expected.
+gemini_voice.ts(174,17): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(174,44): error TS1002: Unterminated string literal.
+gemini_voice.ts(175,11): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(175,39): error TS1002: Unterminated string literal.
+gemini_voice.ts(176,1): error TS1435: Unknown keyword or identifier. Did you mean 'try'?
+gemini_voice.ts(176,13): error TS1005: ',' expected.
+gemini_voice.ts(176,19): error TS1005: ',' expected.
+gemini_voice.ts(176,26): error TS1005: ',' expected.
+gemini_voice.ts(176,31): error TS1005: ',' expected.
+gemini_voice.ts(176,43): error TS1005: ',' expected.
+gemini_voice.ts(176,46): error TS1005: ',' expected.
+gemini_voice.ts(176,50): error TS1005: ',' expected.
+gemini_voice.ts(176,56): error TS1005: ',' expected.
+gemini_voice.ts(176,59): error TS1005: ',' expected.
+gemini_voice.ts(176,67): error TS1005: ',' expected.
+gemini_voice.ts(176,71): error TS1005: ',' expected.
+gemini_voice.ts(176,76): error TS1005: ',' expected.
+gemini_voice.ts(176,79): error TS1005: ',' expected.
+gemini_voice.ts(176,90): error TS1005: ',' expected.
+gemini_voice.ts(176,100): error TS1005: ',' expected.
+gemini_voice.ts(176,103): error TS1005: ',' expected.
+gemini_voice.ts(176,108): error TS1005: ',' expected.
+gemini_voice.ts(176,112): error TS1005: ',' expected.
+gemini_voice.ts(176,116): error TS1005: ',' expected.
+gemini_voice.ts(176,120): error TS1005: ',' expected.
+gemini_voice.ts(176,129): error TS1005: ',' expected.
+gemini_voice.ts(176,137): error TS1389: 'for' is not allowed as a variable declaration name.
+gemini_voice.ts(176,141): error TS1005: '(' expected.
+gemini_voice.ts(176,159): error TS1005: ';' expected.
+gemini_voice.ts(176,222): error TS1005: ';' expected.
+gemini_voice.ts(176,224): error TS1005: ')' expected.
+gemini_voice.ts(176,231): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(176,236): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(176,242): error TS1435: Unknown keyword or identifier. Did you mean 'implements'?
+gemini_voice.ts(176,263): error TS1005: ';' expected.
+gemini_voice.ts(178,8): error TS1005: ';' expected.
+gemini_voice.ts(178,10): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(178,14): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(178,20): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(178,45): error TS1005: ';' expected.
+gemini_voice.ts(178,48): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(178,55): error TS1228: A type predicate is only allowed in return type position for functions and methods.
+gemini_voice.ts(178,58): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(178,60): error TS1435: Unknown keyword or identifier. Did you mean 'get'?
+gemini_voice.ts(178,66): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(178,70): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(178,77): error TS1005: '{' expected.
+gemini_voice.ts(178,81): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(178,88): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(178,95): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(178,99): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(178,111): error TS1005: '(' expected.
+gemini_voice.ts(178,118): error TS1005: ')' expected.
+gemini_voice.ts(178,122): error TS1003: Identifier expected.
+gemini_voice.ts(179,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(179,12): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(179,14): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(179,21): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(179,24): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(179,32): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(180,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(180,5): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(180,9): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(180,16): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(180,21): error TS1435: Unknown keyword or identifier. Did you mean 'out put'?
+gemini_voice.ts(180,39): error TS1005: ';' expected.
+gemini_voice.ts(180,43): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(180,47): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(180,51): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(180,57): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(180,64): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(180,67): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(180,76): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(180,78): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(180,101): error TS1005: ';' expected.
+gemini_voice.ts(180,106): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(180,111): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(180,122): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(180,125): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(180,129): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(180,133): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(180,139): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(180,142): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(224,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(225,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(225,5): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(225,12): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(225,20): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(225,24): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(225,37): error TS1005: ';' expected.
+gemini_voice.ts(225,58): error TS1005: ';' expected.
+gemini_voice.ts(227,10): error TS1005: ';' expected.
+gemini_voice.ts(227,24): error TS1005: ';' expected.
+gemini_voice.ts(227,40): error TS1005: ';' expected.
+gemini_voice.ts(228,8): error TS1005: ';' expected.
+gemini_voice.ts(228,22): error TS1005: ';' expected.
+gemini_voice.ts(228,39): error TS1005: ';' expected.
+gemini_voice.ts(229,8): error TS1005: ';' expected.
+gemini_voice.ts(229,21): error TS1005: ';' expected.
+gemini_voice.ts(229,41): error TS1005: ';' expected.
+gemini_voice.ts(230,11): error TS1005: ';' expected.
+gemini_voice.ts(230,30): error TS1005: ';' expected.
+gemini_voice.ts(230,48): error TS1005: ';' expected.
+gemini_voice.ts(231,11): error TS1005: ';' expected.
+gemini_voice.ts(231,24): error TS1005: ';' expected.
+gemini_voice.ts(231,34): error TS1005: ';' expected.
+gemini_voice.ts(231,51): error TS1005: ';' expected.
+gemini_voice.ts(232,11): error TS1005: ';' expected.
+gemini_voice.ts(232,27): error TS1005: ';' expected.
+gemini_voice.ts(232,49): error TS1005: ';' expected.
+gemini_voice.ts(233,13): error TS1005: ';' expected.
+gemini_voice.ts(233,31): error TS1005: ';' expected.
+gemini_voice.ts(233,46): error TS1005: ';' expected.
+gemini_voice.ts(234,11): error TS1005: ';' expected.
+gemini_voice.ts(234,25): error TS1005: ';' expected.
+gemini_voice.ts(234,46): error TS1005: ';' expected.
+gemini_voice.ts(235,10): error TS1005: ';' expected.
+gemini_voice.ts(235,35): error TS1005: ';' expected.
+gemini_voice.ts(235,57): error TS1005: ';' expected.
+gemini_voice.ts(236,13): error TS1005: ';' expected.
+gemini_voice.ts(236,33): error TS1005: ';' expected.
+gemini_voice.ts(236,57): error TS1005: ';' expected.
+gemini_voice.ts(237,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(237,5): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(237,9): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(237,14): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(237,18): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(237,22): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(237,42): error TS1005: ';' expected.
+gemini_voice.ts(237,49): error TS1003: Identifier expected.
+gemini_voice.ts(239,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(240,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(240,5): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(240,9): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(240,16): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(240,23): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(240,27): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(240,33): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(240,61): error TS1005: ';' expected.
+gemini_voice.ts(240,69): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(240,73): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(240,86): error TS1005: ';' expected.
+gemini_voice.ts(242,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(242,19): error TS1005: ';' expected.
+gemini_voice.ts(242,24): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(242,42): error TS1005: ';' expected.
+gemini_voice.ts(243,18): error TS1005: ';' expected.
+gemini_voice.ts(243,26): error TS1005: ';' expected.
+gemini_voice.ts(243,42): error TS1005: ';' expected.
+gemini_voice.ts(244,13): error TS1005: ';' expected.
+gemini_voice.ts(244,21): error TS1005: ';' expected.
+gemini_voice.ts(244,33): error TS1005: ';' expected.
+gemini_voice.ts(245,16): error TS1005: ';' expected.
+gemini_voice.ts(245,24): error TS1005: ';' expected.
+gemini_voice.ts(245,37): error TS1005: ';' expected.
+gemini_voice.ts(246,23): error TS1005: ';' expected.
+gemini_voice.ts(246,31): error TS1005: ';' expected.
+gemini_voice.ts(246,46): error TS1005: ';' expected.
+gemini_voice.ts(247,17): error TS1005: ';' expected.
+gemini_voice.ts(247,25): error TS1005: ';' expected.
+gemini_voice.ts(247,39): error TS1005: ';' expected.
+gemini_voice.ts(248,20): error TS1005: ';' expected.
+gemini_voice.ts(248,28): error TS1005: ';' expected.
+gemini_voice.ts(248,44): error TS1005: ';' expected.
+gemini_voice.ts(249,20): error TS1005: ';' expected.
+gemini_voice.ts(249,28): error TS1005: ';' expected.
+gemini_voice.ts(249,43): error TS1005: ';' expected.
+gemini_voice.ts(250,16): error TS1005: ';' expected.
+gemini_voice.ts(250,24): error TS1005: ';' expected.
+gemini_voice.ts(250,40): error TS1005: ';' expected.
+gemini_voice.ts(251,21): error TS1005: ';' expected.
+gemini_voice.ts(251,29): error TS1005: ';' expected.
+gemini_voice.ts(251,47): error TS1005: ';' expected.
+gemini_voice.ts(252,20): error TS1005: ';' expected.
+gemini_voice.ts(252,28): error TS1005: ';' expected.
+gemini_voice.ts(252,48): error TS1005: ';' expected.
+gemini_voice.ts(253,16): error TS1005: ';' expected.
+gemini_voice.ts(253,34): error TS1005: ';' expected.
+gemini_voice.ts(253,56): error TS1005: ';' expected.
+gemini_voice.ts(254,14): error TS1005: ';' expected.
+gemini_voice.ts(254,22): error TS1005: ';' expected.
+gemini_voice.ts(254,36): error TS1005: ';' expected.
+gemini_voice.ts(255,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(256,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(256,7): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(256,14): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(257,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(257,12): error TS1005: ';' expected.
+gemini_voice.ts(257,18): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(257,30): error TS1127: Invalid character.
+gemini_voice.ts(257,31): error TS1127: Invalid character.
+gemini_voice.ts(257,33): error TS1127: Invalid character.
+gemini_voice.ts(257,34): error TS1127: Invalid character.
+gemini_voice.ts(258,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(258,12): error TS1005: ';' expected.
+gemini_voice.ts(258,16): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(258,28): error TS1127: Invalid character.
+gemini_voice.ts(258,29): error TS1127: Invalid character.
+gemini_voice.ts(258,31): error TS1127: Invalid character.
+gemini_voice.ts(258,32): error TS1127: Invalid character.
+gemini_voice.ts(260,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(260,5): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(260,12): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(260,16): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(260,21): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(260,29): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(260,34): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(260,41): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(260,45): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(260,54): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(260,68): error TS1003: Identifier expected.
+gemini_voice.ts(261,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(261,3): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(261,7): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(261,15): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(261,19): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(261,21): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(261,29): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(261,36): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(261,42): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(261,47): error TS1005: ';' expected.
+gemini_voice.ts(261,47): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+gemini_voice.ts(261,56): error TS1003: Identifier expected.
+gemini_voice.ts(262,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(262,8): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(262,18): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(262,30): error TS1005: '(' expected.
+gemini_voice.ts(262,39): error TS1005: ';' expected.
+gemini_voice.ts(262,47): error TS1003: Identifier expected.
+gemini_voice.ts(263,1): error TS1005: ';' expected.
+gemini_voice.ts(263,11): error TS1005: ')' expected.
+gemini_voice.ts(264,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(264,5): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(264,12): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(264,19): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(264,25): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(264,60): error TS1005: ';' expected.
+gemini_voice.ts(264,66): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(264,81): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(264,88): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(264,93): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(264,105): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(264,109): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(264,116): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(264,127): error TS1005: ',' expected.
+gemini_voice.ts(264,133): error TS1005: ',' expected.
+gemini_voice.ts(264,142): error TS1005: ',' expected.
+gemini_voice.ts(264,148): error TS1005: ',' expected.
+gemini_voice.ts(264,153): error TS1005: ',' expected.
+gemini_voice.ts(264,159): error TS1005: ',' expected.
+gemini_voice.ts(264,163): error TS1005: ',' expected.
+gemini_voice.ts(264,168): error TS1005: ',' expected.
+gemini_voice.ts(264,173): error TS1005: ',' expected.
+gemini_voice.ts(264,176): error TS1005: ',' expected.
+gemini_voice.ts(264,185): error TS1005: ',' expected.
+gemini_voice.ts(264,190): error TS1005: ',' expected.
+gemini_voice.ts(264,194): error TS1005: ',' expected.
+gemini_voice.ts(264,197): error TS1005: ',' expected.
+gemini_voice.ts(264,201): error TS1005: ',' expected.
+gemini_voice.ts(264,203): error TS1005: ',' expected.
+gemini_voice.ts(266,8): error TS1005: ',' expected.
+gemini_voice.ts(266,15): error TS1005: ',' expected.
+gemini_voice.ts(266,20): error TS1005: ';' expected.
+gemini_voice.ts(266,38): error TS1005: ';' expected.
+gemini_voice.ts(266,42): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(266,48): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(266,75): error TS1005: ';' expected.
+gemini_voice.ts(266,83): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(266,85): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(266,95): error TS1005: '(' expected.
+gemini_voice.ts(266,97): error TS1005: ';' expected.
+gemini_voice.ts(266,105): error TS1005: ';' expected.
+gemini_voice.ts(266,111): error TS1005: ')' expected.
+gemini_voice.ts(266,118): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(266,132): error TS1005: ';' expected.
+gemini_voice.ts(266,138): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(266,151): error TS1005: ';' expected.
+gemini_voice.ts(266,161): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(266,173): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(266,177): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(266,199): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(266,202): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(266,208): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(266,216): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(266,221): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(266,229): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(266,233): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(266,371): error TS1005: ';' expected.
+gemini_voice.ts(266,373): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(266,379): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(266,384): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(266,390): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(266,395): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(266,403): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(266,415): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(266,424): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(266,448): error TS1005: ';' expected.
+gemini_voice.ts(266,452): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(266,465): error TS1003: Identifier expected.
+gemini_voice.ts(268,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(268,4): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(268,14): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(268,22): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(268,45): error TS1005: ';' expected.
+gemini_voice.ts(268,53): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(268,79): error TS1005: ';' expected.
+gemini_voice.ts(268,124): error TS1005: ';' expected.
+gemini_voice.ts(268,138): error TS1005: ';' expected.
+gemini_voice.ts(268,142): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(268,151): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(268,155): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(268,418): error TS1002: Unterminated string literal.
+gemini_voice.ts(270,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(270,5): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(270,13): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(270,21): error TS1005: ';' expected.
+gemini_voice.ts(270,27): error TS1228: A type predicate is only allowed in return type position for functions and methods.
+gemini_voice.ts(270,30): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(270,33): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(270,39): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(270,51): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(270,61): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(270,65): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(270,71): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(270,77): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(270,82): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(270,93): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(270,99): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(270,124): error TS1005: ',' expected.
+gemini_voice.ts(270,128): error TS1005: ',' expected.
+gemini_voice.ts(270,134): error TS1005: ',' expected.
+gemini_voice.ts(270,144): error TS1005: ',' expected.
+gemini_voice.ts(270,148): error TS1005: ',' expected.
+gemini_voice.ts(270,152): error TS1005: ',' expected.
+gemini_voice.ts(270,160): error TS1005: ',' expected.
+gemini_voice.ts(270,163): error TS1005: ',' expected.
+gemini_voice.ts(270,171): error TS1005: ',' expected.
+gemini_voice.ts(270,176): error TS1005: ',' expected.
+gemini_voice.ts(270,180): error TS1005: ',' expected.
+gemini_voice.ts(272,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(273,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(273,3): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(273,10): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(273,17): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(273,25): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(273,34): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(273,38): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(273,48): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(273,57): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(273,62): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(273,67): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(273,76): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(273,79): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(273,85): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(273,87): error TS1435: Unknown keyword or identifier. Did you mean 'get'?
+gemini_voice.ts(275,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(275,29): error TS1005: ';' expected.
+gemini_voice.ts(275,31): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(275,43): error TS1005: '(' expected.
+gemini_voice.ts(275,47): error TS1005: ';' expected.
+gemini_voice.ts(275,63): error TS1005: ';' expected.
+gemini_voice.ts(275,65): error TS1005: ')' expected.
+gemini_voice.ts(275,95): error TS1005: ';' expected.
+gemini_voice.ts(275,99): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(275,103): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(275,109): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(275,125): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(275,146): error TS1005: ';' expected.
+gemini_voice.ts(276,18): error TS1005: ';' expected.
+gemini_voice.ts(276,38): error TS1005: ';' expected.
+gemini_voice.ts(276,43): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(276,47): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(276,56): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(276,68): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(276,72): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(277,17): error TS1005: ';' expected.
+gemini_voice.ts(277,211): error TS1002: Unterminated string literal.
+gemini_voice.ts(278,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(278,24): error TS1005: ';' expected.
+gemini_voice.ts(278,28): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(278,34): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(278,36): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(278,47): error TS1435: Unknown keyword or identifier. Did you mean 'string'?
+gemini_voice.ts(278,66): error TS1005: ';' expected.
+gemini_voice.ts(278,71): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(278,79): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(278,85): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(278,92): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(278,96): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(278,102): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(278,106): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(278,110): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(279,22): error TS1005: ';' expected.
+gemini_voice.ts(279,27): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(279,32): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(279,36): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(279,42): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(279,47): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(279,61): error TS1005: ';' expected.
+gemini_voice.ts(279,88): error TS1005: ';' expected.
+gemini_voice.ts(279,93): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(279,97): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(279,108): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(279,114): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(279,118): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(279,126): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(279,132): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(279,139): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(279,149): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(279,152): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(279,156): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(279,167): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(279,171): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(280,13): error TS1005: ';' expected.
+gemini_voice.ts(280,15): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(280,20): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(280,27): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(280,32): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(280,36): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(280,42): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(280,60): error TS1005: ';' expected.
+gemini_voice.ts(280,65): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(280,68): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(280,70): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(280,76): error TS1435: Unknown keyword or identifier. Did you mean 'out line'?
+gemini_voice.ts(280,84): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(280,87): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(280,91): error TS1435: Unknown keyword or identifier. Did you mean 'for mat'?
+gemini_voice.ts(280,98): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(280,104): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(280,108): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(280,112): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(280,115): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(280,118): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(280,125): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(280,129): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(280,131): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(280,145): error TS1005: '(' expected.
+gemini_voice.ts(280,149): error TS1003: Identifier expected.
+gemini_voice.ts(281,1): error TS1005: ';' expected.
+gemini_voice.ts(281,9): error TS1005: ';' expected.
+gemini_voice.ts(281,14): error TS1005: ')' expected.
+gemini_voice.ts(283,1): error TS1127: Invalid character.
+gemini_voice.ts(283,3): error TS1005: ';' expected.
+gemini_voice.ts(283,18): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(283,24): error TS1003: Identifier expected.
+gemini_voice.ts(284,1): error TS1127: Invalid character.
+gemini_voice.ts(284,2): error TS1127: Invalid character.
+gemini_voice.ts(284,4): error TS1005: ';' expected.
+gemini_voice.ts(286,1): error TS1127: Invalid character.
+gemini_voice.ts(286,2): error TS1127: Invalid character.
+gemini_voice.ts(286,4): error TS1005: ';' expected.
+gemini_voice.ts(286,15): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(286,19): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(287,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(287,4): error TS1228: A type predicate is only allowed in return type position for functions and methods.
+gemini_voice.ts(287,9): error TS1005: ';' expected.
+gemini_voice.ts(287,10): error TS1121: Octal literals are not allowed. Use the syntax '0o0'.
+gemini_voice.ts(287,13): error TS1005: ';' expected.
+gemini_voice.ts(287,21): error TS1005: ';' expected.
+gemini_voice.ts(287,36): error TS1005: ';' expected.
+gemini_voice.ts(287,43): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(287,55): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(287,59): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(287,67): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(288,9): error TS1005: ';' expected.
+gemini_voice.ts(288,20): error TS1005: ';' expected.
+gemini_voice.ts(288,23): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(288,45): error TS1005: ';' expected.
+gemini_voice.ts(288,58): error TS1005: ';' expected.
+gemini_voice.ts(288,64): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(288,70): error TS1228: A type predicate is only allowed in return type position for functions and methods.
+gemini_voice.ts(288,81): error TS1003: Identifier expected.
+gemini_voice.ts(289,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(289,5): error TS1228: A type predicate is only allowed in return type position for functions and methods.
+gemini_voice.ts(289,8): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(289,25): error TS1005: ';' expected.
+gemini_voice.ts(289,43): error TS1005: ';' expected.
+gemini_voice.ts(289,46): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(289,50): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(289,56): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(289,59): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(289,65): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(289,71): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(290,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(290,8): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(290,11): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(290,13): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(290,22): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(290,42): error TS1005: ';' expected.
+gemini_voice.ts(290,48): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(290,52): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(290,59): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(290,63): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(290,70): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(291,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(291,9): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(291,24): error TS1005: ';' expected.
+gemini_voice.ts(291,27): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(291,56): error TS1005: ';' expected.
+gemini_voice.ts(291,64): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(291,73): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(292,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(292,4): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(292,7): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(292,21): error TS1003: Identifier expected.
+gemini_voice.ts(294,1): error TS1127: Invalid character.
+gemini_voice.ts(294,2): error TS1127: Invalid character.
+gemini_voice.ts(294,3): error TS1127: Invalid character.
+gemini_voice.ts(294,5): error TS1005: ';' expected.
+gemini_voice.ts(294,5): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(294,21): error TS1002: Unterminated string literal.
+gemini_voice.ts(296,1): error TS1109: Expression expected.
+gemini_voice.ts(296,7): error TS1005: ';' expected.
+gemini_voice.ts(296,20): error TS1005: ';' expected.
+gemini_voice.ts(296,22): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(296,26): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(296,31): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(296,36): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(296,52): error TS1005: ';' expected.
+gemini_voice.ts(296,62): error TS1005: ';' expected.
+gemini_voice.ts(296,67): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(297,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(297,8): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(297,15): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(297,18): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(297,23): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(297,27): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(297,51): error TS1005: ';' expected.
+gemini_voice.ts(298,1): error TS1003: Identifier expected.
+gemini_voice.ts(298,11): error TS1005: ';' expected.
+gemini_voice.ts(298,13): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(298,18): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(298,29): error TS1435: Unknown keyword or identifier. Did you mean 'with out'?
+gemini_voice.ts(298,53): error TS1005: ';' expected.
+gemini_voice.ts(298,64): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(299,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(299,8): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(299,11): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(299,32): error TS1003: Identifier expected.
+gemini_voice.ts(301,9): error TS1005: ';' expected.
+gemini_voice.ts(301,11): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(301,18): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(301,21): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(301,24): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(301,48): error TS1005: ';' expected.
+gemini_voice.ts(301,56): error TS1005: '(' expected.
+gemini_voice.ts(301,60): error TS1005: ')' expected.
+gemini_voice.ts(302,6): error TS1005: '(' expected.
+gemini_voice.ts(302,8): error TS1005: ')' expected.
+gemini_voice.ts(302,19): error TS1005: ';' expected.
+gemini_voice.ts(302,40): error TS1005: ';' expected.
+gemini_voice.ts(302,54): error TS1005: '(' expected.
+gemini_voice.ts(302,60): error TS1005: ')' expected.
+gemini_voice.ts(302,72): error TS1127: Invalid character.
+gemini_voice.ts(302,74): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(303,9): error TS1005: ';' expected.
+gemini_voice.ts(305,11): error TS1005: ';' expected.
+gemini_voice.ts(305,13): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(305,17): error TS1228: A type predicate is only allowed in return type position for functions and methods.
+gemini_voice.ts(305,20): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(307,1): error TS1127: Invalid character.
+gemini_voice.ts(307,2): error TS1127: Invalid character.
+gemini_voice.ts(307,3): error TS1127: Invalid character.
+gemini_voice.ts(307,5): error TS1005: ';' expected.
+gemini_voice.ts(308,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(308,5): error TS1228: A type predicate is only allowed in return type position for functions and methods.
+gemini_voice.ts(308,8): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(308,12): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(308,21): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(308,34): error TS1005: '(' expected.
+gemini_voice.ts(308,38): error TS1005: ';' expected.
+gemini_voice.ts(308,41): error TS1005: ';' expected.
+gemini_voice.ts(308,62): error TS1005: ')' expected.
+gemini_voice.ts(308,79): error TS1005: ';' expected.
+gemini_voice.ts(309,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(309,8): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(309,13): error TS1435: Unknown keyword or identifier. Did you mean 'require'?
+gemini_voice.ts(309,22): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(309,24): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(309,36): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(309,44): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(309,51): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(309,63): error TS1005: ';' expected.
+gemini_voice.ts(309,81): error TS1003: Identifier expected.
+gemini_voice.ts(311,1): error TS1127: Invalid character.
+gemini_voice.ts(311,2): error TS1127: Invalid character.
+gemini_voice.ts(311,3): error TS1127: Invalid character.
+gemini_voice.ts(311,4): error TS1127: Invalid character.
+gemini_voice.ts(311,6): error TS1005: ';' expected.
+gemini_voice.ts(312,14): error TS1005: ';' expected.
+gemini_voice.ts(312,27): error TS1005: ';' expected.
+gemini_voice.ts(312,35): error TS1005: ';' expected.
+gemini_voice.ts(312,39): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(312,57): error TS1005: ';' expected.
+gemini_voice.ts(312,60): error TS1228: A type predicate is only allowed in return type position for functions and methods.
+gemini_voice.ts(313,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(313,23): error TS1005: ';' expected.
+gemini_voice.ts(313,36): error TS1005: ';' expected.
+gemini_voice.ts(313,36): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(313,73): error TS1002: Unterminated string literal.
+gemini_voice.ts(314,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(314,7): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(314,18): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(314,21): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(314,25): error TS1128: Declaration or statement expected.
+gemini_voice.ts(314,29): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(314,50): error TS1005: ';' expected.
+gemini_voice.ts(314,63): error TS1005: ';' expected.
+gemini_voice.ts(314,68): error TS1005: ';' expected.
+gemini_voice.ts(315,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(315,60): error TS1005: ';' expected.
+gemini_voice.ts(316,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(316,10): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(317,1): error TS1435: Unknown keyword or identifier. Did you mean 'let'?
+gemini_voice.ts(317,45): error TS1002: Unterminated string literal.
+gemini_voice.ts(319,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(320,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(320,9): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(320,18): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(320,22): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(320,30): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(320,33): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(322,17): error TS1005: ';' expected.
+gemini_voice.ts(322,22): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(322,32): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(322,34): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(322,39): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(322,45): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(322,52): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(322,56): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(322,62): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(322,66): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(322,72): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(322,100): error TS1005: ';' expected.
+gemini_voice.ts(322,103): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(322,107): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(322,117): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(322,120): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(322,125): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(322,130): error TS1435: Unknown keyword or identifier. Did you mean 'set ting'?
+gemini_voice.ts(322,138): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(322,142): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(322,148): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(323,11): error TS1005: ';' expected.
+gemini_voice.ts(323,20): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(323,24): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(323,34): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(323,37): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(323,41): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(323,51): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(323,129): error TS1002: Unterminated string literal.
+gemini_voice.ts(326,1): error TS1127: Invalid character.
+gemini_voice.ts(326,3): error TS1005: ';' expected.
+gemini_voice.ts(326,18): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(326,24): error TS1003: Identifier expected.
+gemini_voice.ts(327,1): error TS1127: Invalid character.
+gemini_voice.ts(327,2): error TS1127: Invalid character.
+gemini_voice.ts(327,4): error TS1005: ';' expected.
+gemini_voice.ts(330,1): error TS1127: Invalid character.
+gemini_voice.ts(330,3): error TS1005: ';' expected.
+gemini_voice.ts(330,18): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(330,27): error TS1003: Identifier expected.
+gemini_voice.ts(331,1): error TS1127: Invalid character.
+gemini_voice.ts(331,2): error TS1127: Invalid character.
+gemini_voice.ts(331,4): error TS1005: ';' expected.
+gemini_voice.ts(333,1): error TS1435: Unknown keyword or identifier. Did you mean 'set'?
+gemini_voice.ts(333,5): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(333,9): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(333,21): error TS1005: '(' expected.
+gemini_voice.ts(333,25): error TS1005: ';' expected.
+gemini_voice.ts(333,42): error TS1005: ';' expected.
+gemini_voice.ts(333,62): error TS1005: ')' expected.
+gemini_voice.ts(333,76): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(333,84): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(333,89): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(333,99): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(333,103): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(333,108): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(333,126): error TS1005: ';' expected.
+gemini_voice.ts(333,131): error TS1228: A type predicate is only allowed in return type position for functions and methods.
+gemini_voice.ts(333,134): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(333,144): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(333,151): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(333,155): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(333,165): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(333,169): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(333,173): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(333,176): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(333,193): error TS1005: ';' expected.
+gemini_voice.ts(333,199): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(333,208): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(333,212): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(333,226): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(333,238): error TS1005: '(' expected.
+gemini_voice.ts(333,242): error TS1005: ';' expected.
+gemini_voice.ts(333,249): error TS1005: ';' expected.
+gemini_voice.ts(333,261): error TS1005: ')' expected.
+gemini_voice.ts(333,265): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(333,272): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(333,276): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(333,300): error TS1005: ';' expected.
+gemini_voice.ts(333,307): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(335,13): error TS1005: ';' expected.
+gemini_voice.ts(337,1): error TS1127: Invalid character.
+gemini_voice.ts(337,2): error TS1127: Invalid character.
+gemini_voice.ts(337,4): error TS1005: ';' expected.
+gemini_voice.ts(337,15): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(337,19): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(338,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(338,4): error TS1228: A type predicate is only allowed in return type position for functions and methods.
+gemini_voice.ts(338,9): error TS1005: ';' expected.
+gemini_voice.ts(338,10): error TS1121: Octal literals are not allowed. Use the syntax '0o0'.
+gemini_voice.ts(338,13): error TS1005: ';' expected.
+gemini_voice.ts(338,21): error TS1005: ';' expected.
+gemini_voice.ts(338,36): error TS1005: ';' expected.
+gemini_voice.ts(338,43): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(338,55): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(338,59): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(338,67): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(339,9): error TS1005: ';' expected.
+gemini_voice.ts(339,20): error TS1005: ';' expected.
+gemini_voice.ts(339,23): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(339,45): error TS1005: ';' expected.
+gemini_voice.ts(339,58): error TS1005: ';' expected.
+gemini_voice.ts(339,64): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(339,70): error TS1228: A type predicate is only allowed in return type position for functions and methods.
+gemini_voice.ts(339,81): error TS1003: Identifier expected.
+gemini_voice.ts(340,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(340,5): error TS1228: A type predicate is only allowed in return type position for functions and methods.
+gemini_voice.ts(340,8): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(340,25): error TS1005: ';' expected.
+gemini_voice.ts(340,43): error TS1005: ';' expected.
+gemini_voice.ts(340,46): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(340,50): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(340,56): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(340,59): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(340,65): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(340,71): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(341,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(341,8): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(341,11): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(341,13): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(341,22): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(341,42): error TS1005: ';' expected.
+gemini_voice.ts(341,48): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(341,52): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(341,59): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(341,63): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(341,70): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(342,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(342,9): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(342,24): error TS1005: ';' expected.
+gemini_voice.ts(342,27): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(342,56): error TS1005: ';' expected.
+gemini_voice.ts(342,64): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(343,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(343,6): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(343,9): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(343,12): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(343,26): error TS1003: Identifier expected.
+gemini_voice.ts(346,1): error TS1127: Invalid character.
+gemini_voice.ts(346,2): error TS1127: Invalid character.
+gemini_voice.ts(346,4): error TS1005: ';' expected.
+gemini_voice.ts(346,15): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(347,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(347,3): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(347,32): error TS1005: ';' expected.
+gemini_voice.ts(347,45): error TS1005: ';' expected.
+gemini_voice.ts(347,63): error TS1005: ';' expected.
+gemini_voice.ts(348,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(348,10): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(348,13): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(348,19): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(348,26): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(348,35): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(348,39): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(348,41): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(348,56): error TS1005: ';' expected.
+gemini_voice.ts(348,62): error TS1228: A type predicate is only allowed in return type position for functions and methods.
+gemini_voice.ts(349,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(350,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(351,1): error TS1435: Unknown keyword or identifier. Did you mean 'this'?
+gemini_voice.ts(351,6): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(351,15): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(351,23): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(351,32): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(351,41): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(351,66): error TS1005: ';' expected.
+gemini_voice.ts(351,70): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(351,75): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(351,79): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(351,83): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(351,103): error TS1005: ';' expected.
+gemini_voice.ts(351,106): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(351,116): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(351,120): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(351,133): error TS1005: ';' expected.
+gemini_voice.ts(351,141): error TS1003: Identifier expected.
+gemini_voice.ts(353,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(353,8): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(353,13): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(353,129): error TS1005: ';' expected.
+gemini_voice.ts(353,140): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(353,144): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(353,160): error TS1005: ';' expected.
+gemini_voice.ts(353,186): error TS1005: ';' expected.
+gemini_voice.ts(353,190): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(353,195): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(353,199): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(353,205): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(353,222): error TS1005: '(' expected.
+gemini_voice.ts(353,226): error TS1005: ')' expected.
+gemini_voice.ts(353,235): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(353,253): error TS1003: Identifier expected.
+gemini_voice.ts(355,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(355,5): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(355,10): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(355,17): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(355,28): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(355,46): error TS1005: ';' expected.
+gemini_voice.ts(355,62): error TS1005: ';' expected.
+gemini_voice.ts(355,66): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(355,72): error TS1228: A type predicate is only allowed in return type position for functions and methods.
+gemini_voice.ts(355,75): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(355,79): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(355,87): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(355,101): error TS1005: ';' expected.
+gemini_voice.ts(355,120): error TS1005: ';' expected.
+gemini_voice.ts(355,125): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(355,128): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(355,136): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(355,143): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(355,156): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(355,159): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(355,165): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(355,169): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(355,180): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(355,188): error TS1435: Unknown keyword or identifier. Did you mean 'import'?
+gemini_voice.ts(355,198): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(355,201): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(355,223): error TS1005: ';' expected.
+gemini_voice.ts(355,239): error TS1005: ';' expected.
+gemini_voice.ts(355,252): error TS1005: ';' expected.
+gemini_voice.ts(355,272): error TS1003: Identifier expected.
+gemini_voice.ts(357,1): error TS1435: Unknown keyword or identifier. Did you mean 'for'?
+gemini_voice.ts(359,1): error TS1127: Invalid character.
+gemini_voice.ts(359,2): error TS1127: Invalid character.
+gemini_voice.ts(359,3): error TS1127: Invalid character.
+gemini_voice.ts(359,5): error TS1005: ';' expected.
+gemini_voice.ts(359,5): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(359,21): error TS1002: Unterminated string literal.
+gemini_voice.ts(361,8): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(361,21): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(361,25): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(361,31): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(361,36): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(363,9): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(363,16): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(363,19): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(363,22): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(363,46): error TS1005: ';' expected.
+gemini_voice.ts(363,54): error TS1005: '(' expected.
+gemini_voice.ts(363,58): error TS1005: ')' expected.
+gemini_voice.ts(364,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(364,10): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(364,35): error TS1005: ';' expected.
+gemini_voice.ts(366,11): error TS1005: ';' expected.
+gemini_voice.ts(366,13): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(366,22): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(366,33): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(366,40): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(366,45): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(366,50): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(367,14): error TS1005: ';' expected.
+gemini_voice.ts(369,1): error TS1435: Unknown keyword or identifier. Did you mean 'set'?
+gemini_voice.ts(369,6): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(369,10): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(369,15): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(369,19): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(369,25): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(369,28): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(369,32): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(369,57): error TS1005: ';' expected.
+gemini_voice.ts(369,64): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(369,103): error TS1005: ';' expected.
+gemini_voice.ts(369,110): error TS1005: ';' expected.
+gemini_voice.ts(369,116): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(369,135): error TS1005: ';' expected.
+gemini_voice.ts(369,147): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(369,167): error TS1005: ';' expected.
+gemini_voice.ts(369,186): error TS1005: ';' expected.
+gemini_voice.ts(369,297): error TS1005: ';' expected.
+gemini_voice.ts(369,303): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(369,310): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(369,315): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(369,322): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(369,358): error TS1003: Identifier expected.
+gemini_voice.ts(371,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(371,5): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(371,9): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(371,18): error TS1005: '{' expected.
+gemini_voice.ts(371,24): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(371,29): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(371,48): error TS1005: ';' expected.
+gemini_voice.ts(371,73): error TS1005: ';' expected.
+gemini_voice.ts(371,91): error TS1005: ';' expected.
+gemini_voice.ts(371,109): error TS1005: ';' expected.
+gemini_voice.ts(371,138): error TS1005: ';' expected.
+gemini_voice.ts(373,13): error TS1005: ';' expected.
+gemini_voice.ts(375,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(377,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(378,1): error TS1128: Declaration or statement expected.
+gemini_voice.ts(379,8): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(379,19): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(379,23): error TS1435: Unknown keyword or identifier. Did you mean 'any'?
+gemini_voice.ts(379,29): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(379,39): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(379,43): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(379,70): error TS1002: Unterminated string literal.
+gemini_voice.ts(380,1): error TS1128: Declaration or statement expected.
+gemini_voice.ts(381,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(383,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(384,1): error TS1128: Declaration or statement expected.
+gemini_voice.ts(385,8): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(385,14): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(385,19): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(385,40): error TS1005: ';' expected.
+gemini_voice.ts(385,47): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(385,55): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(385,67): error TS1005: '(' expected.
+gemini_voice.ts(385,75): error TS1005: ';' expected.
+gemini_voice.ts(386,1): error TS1003: Identifier expected.
+gemini_voice.ts(389,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(391,1): error TS1109: Expression expected.
+gemini_voice.ts(391,7): error TS1005: ';' expected.
+gemini_voice.ts(391,20): error TS1005: ';' expected.
+gemini_voice.ts(391,22): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(391,26): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(391,31): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(391,36): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(391,52): error TS1005: ';' expected.
+gemini_voice.ts(391,62): error TS1005: ';' expected.
+gemini_voice.ts(391,67): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(392,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(392,8): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(392,15): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(392,18): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(392,23): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(392,27): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(392,51): error TS1005: ';' expected.
+gemini_voice.ts(393,1): error TS1003: Identifier expected.
+gemini_voice.ts(393,11): error TS1005: ';' expected.
+gemini_voice.ts(393,13): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(393,18): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(393,29): error TS1435: Unknown keyword or identifier. Did you mean 'with out'?
+gemini_voice.ts(393,53): error TS1005: ';' expected.
+gemini_voice.ts(394,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(394,11): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(394,18): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(394,21): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(394,42): error TS1003: Identifier expected.
+gemini_voice.ts(395,11): error TS1005: ';' expected.
+gemini_voice.ts(397,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(397,10): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(397,14): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(397,33): error TS1005: ';' expected.
+gemini_voice.ts(397,38): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(397,47): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(397,60): error TS1005: ';' expected.
+gemini_voice.ts(397,67): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(397,71): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(397,87): error TS1005: ';' expected.
+gemini_voice.ts(397,95): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(397,153): error TS1005: ';' expected.
+gemini_voice.ts(399,13): error TS1005: ';' expected.
+gemini_voice.ts(401,1): error TS1127: Invalid character.
+gemini_voice.ts(401,2): error TS1127: Invalid character.
+gemini_voice.ts(401,3): error TS1127: Invalid character.
+gemini_voice.ts(401,5): error TS1005: ';' expected.
+gemini_voice.ts(402,1): error TS1128: Declaration or statement expected.
+gemini_voice.ts(403,9): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(403,18): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(403,29): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(403,36): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(403,41): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(403,46): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(404,1): error TS1128: Declaration or statement expected.
+gemini_voice.ts(407,1): error TS1127: Invalid character.
+gemini_voice.ts(407,2): error TS1127: Invalid character.
+gemini_voice.ts(407,3): error TS1127: Invalid character.
+gemini_voice.ts(407,5): error TS1005: ';' expected.
+gemini_voice.ts(408,1): error TS1128: Declaration or statement expected.
+gemini_voice.ts(409,9): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(409,13): error TS1228: A type predicate is only allowed in return type position for functions and methods.
+gemini_voice.ts(409,16): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(409,18): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(410,1): error TS1128: Declaration or statement expected.
+gemini_voice.ts(413,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(413,9): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(413,16): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(413,20): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(413,25): error TS1435: Unknown keyword or identifier. Did you mean 'var iation'?
+gemini_voice.ts(413,35): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(413,46): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(415,13): error TS1005: ';' expected.
+gemini_voice.ts(419,1): error TS1127: Invalid character.
+gemini_voice.ts(419,2): error TS1127: Invalid character.
+gemini_voice.ts(419,3): error TS1127: Invalid character.
+gemini_voice.ts(419,5): error TS1005: ';' expected.
+gemini_voice.ts(420,1): error TS1128: Declaration or statement expected.
+gemini_voice.ts(422,1): error TS1128: Declaration or statement expected.
+gemini_voice.ts(423,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(425,1): error TS1127: Invalid character.
+gemini_voice.ts(425,2): error TS1127: Invalid character.
+gemini_voice.ts(425,3): error TS1127: Invalid character.
+gemini_voice.ts(425,5): error TS1005: ';' expected.
+gemini_voice.ts(426,1): error TS1128: Declaration or statement expected.
+gemini_voice.ts(427,9): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(427,16): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(427,19): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(427,39): error TS1005: ';' expected.
+gemini_voice.ts(427,53): error TS1005: ';' expected.
+gemini_voice.ts(427,61): error TS1005: '(' expected.
+gemini_voice.ts(427,66): error TS1005: ')' expected.
+gemini_voice.ts(428,1): error TS1003: Identifier expected.
+gemini_voice.ts(431,1): error TS1127: Invalid character.
+gemini_voice.ts(431,2): error TS1127: Invalid character.
+gemini_voice.ts(431,3): error TS1127: Invalid character.
+gemini_voice.ts(431,5): error TS1005: ';' expected.
+gemini_voice.ts(432,1): error TS1128: Declaration or statement expected.
+gemini_voice.ts(433,9): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(433,20): error TS1005: ';' expected.
+gemini_voice.ts(433,22): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(433,26): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(433,32): error TS1228: A type predicate is only allowed in return type position for functions and methods.
+gemini_voice.ts(433,35): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(433,46): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(433,51): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(433,68): error TS1005: ';' expected.
+gemini_voice.ts(433,74): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(433,79): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(433,96): error TS1005: ';' expected.
+gemini_voice.ts(433,99): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(434,1): error TS1003: Identifier expected.
+gemini_voice.ts(435,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(435,6): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(435,9): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(437,1): error TS1005: '{' expected.
+gemini_voice.ts(437,5): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(437,10): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(437,13): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(437,19): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(437,28): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(437,37): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(437,40): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(437,56): error TS1005: ';' expected.
+gemini_voice.ts(437,61): error TS1005: '(' expected.
+gemini_voice.ts(437,65): error TS1005: ')' expected.
+gemini_voice.ts(437,69): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(437,73): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(437,88): error TS1005: ',' expected.
+gemini_voice.ts(437,92): error TS1005: ',' expected.
+gemini_voice.ts(437,96): error TS1005: ';' expected.
+gemini_voice.ts(437,103): error TS1005: ';' expected.
+gemini_voice.ts(437,124): error TS1005: ';' expected.
+gemini_voice.ts(437,143): error TS1005: ';' expected.
+gemini_voice.ts(437,146): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(437,151): error TS1435: Unknown keyword or identifier. Did you mean 'get'?
+gemini_voice.ts(437,157): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(439,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(439,10): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(439,13): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(439,18): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(439,22): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(439,29): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(439,45): error TS1127: Invalid character.
+gemini_voice.ts(439,47): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(439,51): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(439,58): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(439,62): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(439,72): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(439,100): error TS1005: ';' expected.
+gemini_voice.ts(439,102): error TS1435: Unknown keyword or identifier. Did you mean 'get'?
+gemini_voice.ts(440,8): error TS1005: ';' expected.
+gemini_voice.ts(440,149): error TS1002: Unterminated string literal.
+gemini_voice.ts(441,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(441,4): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(441,8): error TS1435: Unknown keyword or identifier. Did you mean 'never'?
+gemini_voice.ts(441,13): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(441,17): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(441,37): error TS1005: ';' expected.
+gemini_voice.ts(441,44): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(441,49): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(441,53): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(441,55): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(441,60): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(441,63): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(441,68): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(441,72): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(441,78): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(441,83): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(441,90): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(442,9): error TS1005: ';' expected.
+gemini_voice.ts(442,16): error TS1002: Unterminated string literal.
+gemini_voice.ts(443,1): error TS1435: Unknown keyword or identifier. Did you mean 'try'?
+gemini_voice.ts(443,5): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(443,9): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(443,15): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(444,11): error TS1005: ';' expected.
+gemini_voice.ts(444,108): error TS1002: Unterminated string literal.
+gemini_voice.ts(445,1): error TS1435: Unknown keyword or identifier. Did you mean 'for'?
+gemini_voice.ts(445,5): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(445,18): error TS1005: '(' expected.
+gemini_voice.ts(445,24): error TS1005: ')' expected.
+gemini_voice.ts(445,38): error TS1005: ';' expected.
+gemini_voice.ts(445,42): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(445,48): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(445,68): error TS1003: Identifier expected.
+gemini_voice.ts(446,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(446,10): error TS1005: ';' expected.
+gemini_voice.ts(448,10): error TS1005: ':' expected.
+gemini_voice.ts(449,21): error TS1005: ';' expected.
+gemini_voice.ts(449,32): error TS1005: ';' expected.
+gemini_voice.ts(449,40): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(449,48): error TS1005: ';' expected.
+gemini_voice.ts(449,53): error TS1228: A type predicate is only allowed in return type position for functions and methods.
+gemini_voice.ts(449,56): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(449,65): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(449,71): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(449,75): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(449,84): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(449,92): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(449,108): error TS1005: ';' expected.
+gemini_voice.ts(449,121): error TS1005: ';' expected.
+gemini_voice.ts(449,126): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(449,134): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(449,138): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(449,147): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(449,153): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(449,157): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(449,168): error TS1005: ';' expected.
+gemini_voice.ts(449,180): error TS1005: ';' expected.
+gemini_voice.ts(449,193): error TS1005: ';' expected.
+gemini_voice.ts(449,197): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(449,204): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(449,215): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(449,234): error TS1005: ';' expected.
+gemini_voice.ts(449,237): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(449,239): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(449,250): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(449,260): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(449,263): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(449,279): error TS1005: ';' expected.
+gemini_voice.ts(449,294): error TS1003: Identifier expected.
+gemini_voice.ts(451,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(451,6): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(451,18): error TS1121: Octal literals are not allowed. Use the syntax '-0o1'.
+gemini_voice.ts(451,27): error TS1005: ';' expected.
+gemini_voice.ts(457,1): error TS1434: Unexpected keyword or identifier.
+gemini_voice.ts(457,14): error TS1005: ';' expected.
+gemini_voice.ts(457,25): error TS1003: Identifier expected.
+gemini_voice.ts(457,26): error TS1003: Identifier expected.

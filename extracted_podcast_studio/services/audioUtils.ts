@@ -26,7 +26,7 @@ export async function decodeAudioData(
     return await ctx.decodeAudioData(bufferCopy);
   } catch (e) {
     console.warn("Standard decode failed, attempting raw PCM decode strategy.", e);
-    
+
     const dataInt16 = new Int16Array(data.buffer);
     const frameCount = dataInt16.length / numChannels;
     const buffer = ctx.createBuffer(numChannels, frameCount, sampleRate);
@@ -53,21 +53,21 @@ export function trimAudioBuffer(ctx: AudioContext, buffer: AudioBuffer): AudioBu
 
   // Scan start
   let start = 0;
-  while(start < len && Math.abs(data[start]) < threshold) {
+  while (start < len && Math.abs(data[start]) < threshold) {
     start++;
   }
 
   // Scan end
   let end = len - 1;
-  while(end > start && Math.abs(data[end]) < threshold) {
+  while (end > start && Math.abs(data[end]) < threshold) {
     end--;
   }
-  
+
   // Pad by 50ms (approx 1200 samples at 24k) to avoid clipping breath
   const padding = Math.floor(ctx.sampleRate * 0.05);
   start = Math.max(0, start - padding);
   end = Math.min(len, end + padding);
-  
+
   const newLen = end - start;
   if (newLen <= 0) return buffer; // Should not happen unless fully silent
 
@@ -124,29 +124,29 @@ export async function mixPodcastAudio(
   skipMusic: boolean = false // New flag to skip intro/outro
 ): Promise<AudioBuffer> {
   // Use speech sample rate (usually 24kHz) to avoid resampling artifacts and size issues
-  const sampleRate = speechBuffer.sampleRate; 
-  
+  const sampleRate = speechBuffer.sampleRate;
+
   if (skipMusic) {
-      // Just return the speech buffer directly if music is skipped (e.g. for Reels)
-      return speechBuffer;
+    // Just return the speech buffer directly if music is skipped (e.g. for Reels)
+    return speechBuffer;
   }
 
   const introSolo = 3.5;
   const overlap = 2.5;
   const jingleDuration = 6;
-  
+
   const totalDuration = Math.ceil(introSolo + speechBuffer.duration + 3.5);
-  
+
   // Create Offline Context matching the speech sample rate
   const offlineCtx = new (window.OfflineAudioContext || (window as any).webkitOfflineAudioContext)(
-    2, 
-    totalDuration * sampleRate, 
+    2,
+    totalDuration * sampleRate,
     sampleRate
   );
-  
+
   // 1. Generate Jingle Buffer
   const jingleBuffer = offlineCtx.createBuffer(2, sampleRate * jingleDuration, sampleRate);
-  
+
   for (let channel = 0; channel < 2; channel++) {
     const data = jingleBuffer.getChannelData(channel);
     for (let i = 0; i < data.length; i++) {
@@ -156,8 +156,8 @@ export async function mixPodcastAudio(
       // Melody (Pluck)
       let melody = 0;
       if (t < 4) {
-         const note = [220, 330, 440, 550][Math.floor(t * 4) % 4];
-         melody = Math.sin(t * note * Math.PI * 2) * Math.exp(-5 * ((t * 4) % 1));
+        const note = [220, 330, 440, 550][Math.floor(t * 4) % 4];
+        melody = Math.sin(t * note * Math.PI * 2) * Math.exp(-5 * ((t * 4) % 1));
       }
       data[i] = (bass * 0.3) + (melody * 0.2);
     }
@@ -174,16 +174,16 @@ export async function mixPodcastAudio(
   }
 
   // 3. Schedule Sources in the Graph
-  
+
   // A. Intro Music
   const introNode = offlineCtx.createBufferSource();
   introNode.buffer = jingleBuffer;
   const introGain = offlineCtx.createGain();
   introGain.gain.value = 0.6;
-  
+
   introNode.connect(introGain);
   introGain.connect(offlineCtx.destination);
-  
+
   introNode.start(0);
   // Fade out
   introGain.gain.setValueAtTime(0.6, introSolo);
@@ -200,13 +200,13 @@ export async function mixPodcastAudio(
   outroNode.buffer = reversedJingle;
   const outroGain = offlineCtx.createGain();
   outroGain.gain.value = 0;
-  
+
   outroNode.connect(outroGain);
   outroGain.connect(offlineCtx.destination);
-  
+
   const speechEnd = introSolo + speechBuffer.duration;
   const outroStart = speechEnd - overlap;
-  
+
   outroNode.start(outroStart);
   // Fade in
   outroGain.gain.setValueAtTime(0, outroStart);
@@ -244,20 +244,21 @@ export function bufferToWave(abuffer: AudioBuffer, len: number): Blob {
   setUint32(length - pos - 4);                   // chunk length
 
   // write interleaved data
-  for(i = 0; i < abuffer.numberOfChannels; i++)
+  for (i = 0; i < abuffer.numberOfChannels; i++)
     channels.push(abuffer.getChannelData(i));
 
-  while(pos < len) {
-    for(i = 0; i < numOfChan; i++) {             // interleave channels
-      sample = Math.max(-1, Math.min(1, channels[i][pos])); // clamp
-      sample = (0.5 + sample < 0 ? sample * 32768 : sample * 32767)|0; // scale to 16-bit signed int
+  let sampleIndex = 0;
+  while (sampleIndex < len) {
+    for (i = 0; i < numOfChan; i++) {             // interleave channels
+      sample = Math.max(-1, Math.min(1, channels[i][sampleIndex])); // clamp
+      sample = (0.5 + sample < 0 ? sample * 32768 : sample * 32767) | 0; // scale to 16-bit signed int
       view.setInt16(44 + offset, sample, true);          // write 16-bit sample
       offset += 2;
     }
-    pos++;
+    sampleIndex++;
   }
 
-  return new Blob([buffer], {type: "audio/wav"});
+  return new Blob([buffer], { type: "audio/wav" });
 
   function setUint16(data: number) {
     view.setUint16(pos, data, true);

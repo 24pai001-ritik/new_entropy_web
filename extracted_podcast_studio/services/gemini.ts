@@ -152,7 +152,7 @@ export const generateOutline = async (settings: PodcastSettings): Promise<Outlin
   `;
 
   const response = await ai.models.generateContent({
-    model: 'gemini-2.5-flash',
+    model: 'gemini-3-flash-preview',
     contents: prompt,
     config: {
       tools: [{ googleSearch: {} }],
@@ -322,10 +322,14 @@ export const generateScript = async (outline: string, settings: PodcastSettings)
     ${ttsInstructions}
 
     ### WRITING STYLE GUIDE - "WRITE FOR THE EAR"
-    - **No monologues**. Nobody speaks in paragraphs. Break it up.
+    - **No monologues**. Nobody speaks in paragraphs. Break it up with short sentences.
     - **Interruptions**. Hosts should interrupt each other using "--" at the end of a line.
-    - **Fillers**. Use "Look," "Listen," "I mean," "Actually," to start sentences naturally.
-    - **Chemistry**. If Host 1 says something crazy, Host 2 should react shocked. If Host 1 makes a joke, Host 2 should laugh.
+    - **Fillers**. Use natural fillers starting sentences:
+      - **English**: "Look," "Listen," "I mean," "Actually," "Well," "Right."
+      - **Hindi/Hinglish**: "मतलब," "तो यार," "देखो," "वैसे," "मतलब कि," "सच्ची," "भाई."
+      - **Gujarati**: "જો," "તમને વાત કહું," "ખરેખર," "એટલે," "સાચું કહું તો."
+    - **Chemistry**. If Host 1 says something crazy, Host 2 should react shocked with a filler like "Wait, what?" or "अरे क्या बात कर रहे हो?".
+    - **Dynamic Pacing**. Use [short pause] for emphasis and [laughing] for reactions.
 
     ### GENERATION TASK
     Write the full script now.
@@ -335,7 +339,7 @@ export const generateScript = async (outline: string, settings: PodcastSettings)
   `;
 
   const response = await ai.models.generateContent({
-    model: 'gemini-2.5-flash',
+    model: 'gemini-3-flash-preview',
     contents: prompt,
     config: {
       temperature: 0.85, // High creativity for natural speech variance
@@ -382,7 +386,20 @@ export const previewVoice = (voiceId: string, language: string = 'English', scri
 
       const response = await ai.models.generateContent({
         model: "gemini-2.5-flash-preview-tts",
-        contents: [{ parts: [{ text }] }],
+        contents: [{
+          parts: [{
+            text: `
+# AUDIO PROFILE: ${preset?.label || 'Voice Talent'}
+### DIRECTOR'S NOTES
+Style: Energetic and professional.
+Accent: Native ${language} speaker.
+Pacing: Natural cadence.
+
+#### TRANSCRIPT
+${text}
+            `.trim()
+          }]
+        }],
         config: {
           responseModalities: [Modality.AUDIO],
           speechConfig: {
@@ -462,7 +479,25 @@ export const generateAudio = async (script: string, settings: PodcastSettings): 
 
       const response = await ai.models.generateContent({
         model: "gemini-2.5-flash-preview-tts",
-        contents: [{ parts: [{ text: seg.text }] }],
+        contents: [{
+          parts: [{
+            text: `
+# AUDIO PROFILE: ${seg.speaker}
+## "The ${hostConfig?.name || 'Vocal Talent'}"
+
+## THE SCENE: Studio Recording
+A high-end, acoustically treated narrative studio. Professional proximity, zero echo, intimate but clear.
+
+### DIRECTOR'S NOTES
+Style: ${settings.tone} delivery. If the text has [laughter], make it genuine. If it has [sigh], make it audible.
+Accent: Native ${settings.language} speaker${settings.language !== 'English' ? ` from a major metropolitan region (e.g. Delhi/Mumbai for Hindi, Ahmedabad for Gujarati)` : ''}. Zero robotic monotone.
+Pacing: Natural "human" drift. Use the punctuation for breath groups.
+
+#### TRANSCRIPT
+${seg.text}
+            `.trim()
+          }]
+        }],
         config: {
           responseModalities: [Modality.AUDIO],
           speechConfig: {
@@ -505,16 +540,21 @@ export const detectImpactfulWords = async (script: string): Promise<{ text: stri
     Analyze the following video script and identify exactly 5-8 highly impactful words or short phrases (max 3 words each) that would benefit from a visual image overlay.
     Focus on words that evoke strong imagery, emotion, or key concepts.
     
+    ### Brand Voice Constraints:
+    - Ensure detected words/phrases are high-impact but professional.
+    - Focus on visual concepts that reinforce a cohesive brand identity.
+    - Identify the "visualIntent" (e.g., "cinematic", "dynamic", "minimalist", "energetic") to guide image selection.
+
     Script:
     ${script}
     
-    Return the result as a JSON array of objects with "text" and "emotionalIntent" fields.
-    Example: [{"text": "AI Revolution", "emotionalIntent": "innovation"}, {"text": "Scale Faster", "emotionalIntent": "growth"}]
+    Return the result as a JSON array of objects with "text" and "emotionalIntent" (which acts as the visual style) fields.
+    Example: [{"text": "AI Revolution", "emotionalIntent": "innovation cinematic"}, {"text": "Scale Faster", "emotionalIntent": "growth dynamic"}]
   `;
 
   try {
     const response = await ai.models.generateContent({
-      model: 'gemini-2.5-flash',
+      model: 'gemini-3-flash-preview',
       contents: prompt,
       config: {
         responseMimeType: "application/json"
@@ -531,11 +571,29 @@ export const detectImpactfulWords = async (script: string): Promise<{ text: stri
 };
 
 export const generateImpactImage = async (word: string, intent?: string): Promise<string | null> => {
-  // Since we don't have a direct image generation tool in this environment's standard Gemini API (unless using Imagen),
-  // we will use a placeholder/stock image service or a conceptual "generate" flow if available.
-  // For this task, I'll use a reliable Unsplash Source URL as a way to "fetch" contextually relevant images.
-  // In a real app, this would be a call to Imagen 3 or DALL-E.
+  const ai = getClient();
+  const stylePrompt = intent ? ` in a ${intent} style` : "";
+  const prompt = `Create a high-quality, cinematic image representing the concept of "${word}"${stylePrompt}. 
+    The image should be visually striking and professional. No text should be present in the image.`;
 
-  const query = intent ? `${word} ${intent}` : word;
-  return `https://source.unsplash.com/featured/?${encodeURIComponent(query)}`;
+  try {
+    const response = await ai.models.generateContent({
+      model: "gemini-3-pro-image-preview",
+      contents: [{ parts: [{ text: prompt }] }],
+    });
+
+    const data = response.candidates?.[0]?.content?.parts?.[0]?.inlineData?.data;
+    if (data) {
+      return `data:image/png;base64,${data}`;
+    }
+
+    // Fallback if data is missing
+    const query = intent ? `${word} ${intent}` : word;
+    return `https://source.unsplash.com/featured/?${encodeURIComponent(query)}`;
+  } catch (e) {
+    console.error("Image generation failed, falling back to Unsplash", e);
+    const query = intent ? `${word} ${intent}` : word;
+    return `https://source.unsplash.com/featured/?${encodeURIComponent(query)}`;
+  }
 };
+

@@ -30,6 +30,14 @@ export interface PodcastSettings {
   targetAudience: string;
   aspectRatio: string;
   logo: string | null; // Base64 Data URL for optional branding
+  firstImage: string | null; // Base64 for hook
+  lastImage: string | null; // Base64 for closure
+  brandColors: {
+    primary: string;
+    secondary: string;
+    text: string;
+    accent: string;
+  };
   // Dynamic Hosts
   hostCount: number;
   hosts: HostConfig[];

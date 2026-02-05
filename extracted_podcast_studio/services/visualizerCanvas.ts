@@ -1481,42 +1481,46 @@ export const drawBrainNetworkVisualizer = (ctx: VisualizerContext, dataArray: Ui
     }
 };
 
-export const drawTitleCard = (ctx: VisualizerContext, text: string, w: number, h: number, hue: number) => {
+export const drawTitleCard = (ctx: VisualizerContext, text: string, w: number, h: number, hue: number, brandColors?: any) => {
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
 
+    const primaryColor = brandColors?.primary || `hsl(${hue}, 100%, 70%)`;
+
     ctx.font = 'bold 64px Inter, sans-serif';
-    ctx.fillStyle = 'white';
-    ctx.shadowColor = `hsl(${hue}, 100%, 50%)`;
+    ctx.fillStyle = brandColors?.text || 'white';
+    ctx.shadowColor = primaryColor;
     ctx.shadowBlur = 30;
 
     const display = text.length > 45 ? text.substring(0, 45) + '...' : text;
     ctx.fillText(display, w / 2, h / 2);
 
     ctx.font = 'normal 32px Inter, sans-serif';
-    ctx.fillStyle = 'rgba(255,255,255,0.8)';
+    ctx.fillStyle = brandColors?.secondary || 'rgba(255,255,255,0.8)';
     ctx.shadowBlur = 15;
-    ctx.fillText("AI Generated Podcast", w / 2, h / 2 + 80);
+    ctx.fillText("Produced for your Brand", w / 2, h / 2 + 80);
 };
 
 export const drawLogo = (ctx: VisualizerContext, logo: CanvasImageSource, w: number, h: number) => {
-    // Target width: ~8% of screen width (Reduced from 15%)
-    const targetW = w * 0.08;
-    const padding = w * 0.02; // Reduced padding
+    // Target width: ~10% of screen width
+    const targetW = w * 0.10;
+    const padding = w * 0.04; // Respectful padding
 
-    // Get natural dimensions with fallback, using 'any' cast to avoid TS union type errors
     const anyLogo = logo as any;
     const imgW = typeof anyLogo.width === 'number' ? anyLogo.width : anyLogo.naturalWidth || 100;
     const imgH = typeof anyLogo.height === 'number' ? anyLogo.height : anyLogo.naturalHeight || 100;
 
-    const scale = targetW / imgW;
-    const drawW = imgW * scale;
-    const drawH = imgH * scale;
+    const ratio = imgW / imgH;
+    const drawW = targetW;
+    const drawH = targetW / ratio;
 
     ctx.save();
-    ctx.globalAlpha = 0.8;
-    // Draw bottom right
-    ctx.drawImage(logo, w - drawW - padding, h - drawH - padding, drawW, drawH);
+    // Bottom-right corner only
+    ctx.translate(w - drawW - padding, h - drawH - padding);
+
+    // Proportional scaling and non-obstructive opacity
+    ctx.globalAlpha = 0.85;
+    ctx.drawImage(logo, 0, 0, drawW, drawH);
     ctx.restore();
 };
 
@@ -1527,7 +1531,8 @@ export const drawCaptions = (
     w: number,
     h: number,
     style: CaptionStyle,
-    hue: number
+    hue: number,
+    brandColors?: any
 ) => {
     // Responsive font size based on minimum dimension to avoid massive text in portrait mode
     const fontSize = Math.floor(Math.min(w, h) * 0.06);
@@ -1586,8 +1591,8 @@ export const drawCaptions = (
 
     // Background (Always 75% Black for readability)
     ctx.fillStyle = 'rgba(0, 0, 0, 0.75)';
-    ctx.shadowColor = style === 'boxed' ? `hsl(${hue}, 100%, 50%)` : 'rgba(0,0,0,0.5)';
-    ctx.shadowBlur = style === 'boxed' ? 20 : 10;
+    ctx.shadowColor = brandColors?.primary || (style === 'boxed' ? `hsl(${hue}, 100%, 50%)` : 'rgba(0,0,0,0.5)');
+    ctx.shadowBlur = style === 'boxed' ? 25 : 10;
 
     ctx.beginPath();
     if (typeof ctx.roundRect === 'function') {
@@ -1604,7 +1609,7 @@ export const drawCaptions = (
 
     // Speaker Label (Above box)
     if (style !== 'minimal') {
-        ctx.fillStyle = `hsl(${(hue + 180) % 360}, 100%, 70%)`;
+        ctx.fillStyle = brandColors?.accent || `hsl(${(hue + 180) % 360}, 100%, 70%)`;
         ctx.font = `bold ${fontSize * 0.6}px Inter, sans-serif`;
         ctx.shadowColor = 'rgba(0,0,0,0.8)';
         ctx.shadowBlur = 4;
@@ -1626,13 +1631,13 @@ export const drawCaptions = (
             let color = 'rgba(255,255,255,0.7)';
 
             if (isCurrent) {
-                color = `hsl(${hue}, 100%, 70%)`;
+                color = brandColors?.primary || `hsl(${hue}, 100%, 70%)`;
                 currentScale = 1.15;
                 ctx.font = `bold ${fontSize * currentScale}px Inter, sans-serif`;
-                ctx.shadowColor = `hsl(${hue}, 100%, 50%)`;
+                ctx.shadowColor = brandColors?.primary || `hsl(${hue}, 100%, 50%)`;
                 ctx.shadowBlur = 15;
             } else if (wordObj.active) {
-                color = '#ffffff';
+                color = brandColors?.text || '#ffffff';
                 ctx.font = `bold ${fontSize}px Inter, sans-serif`;
                 ctx.shadowBlur = 0;
             } else {
@@ -1673,7 +1678,8 @@ export const drawImpactfulImage = (
     start: number,
     end: number,
     w: number,
-    h: number
+    h: number,
+    motion: 'scale' | 'fade' | 'slide' = 'scale'
 ) => {
     const duration = end - start;
     const elapsed = time - start;
@@ -1683,16 +1689,21 @@ export const drawImpactfulImage = (
 
     ctx.save();
 
-    // Cinematic Animation: Subtle Zoom + Fade
-    // Zoom from 1.0 to 1.1
-    const scale = 1.0 + (progress * 0.1);
-    const opacity = progress < 0.2 ? progress / 0.2 :
-        progress > 0.8 ? (1 - progress) / 0.2 : 1;
+    // Cinematic Animation
+    let scale = 1.0;
+    let opacity = progress < 0.2 ? progress / 0.2 : progress > 0.8 ? (1 - progress) / 0.2 : 1;
+    let translateX = 0;
+
+    if (motion === 'scale') {
+        scale = 1.0 + (progress * 0.1);
+    } else if (motion === 'slide') {
+        translateX = (progress - 0.5) * 50; // Subtle slide
+    }
 
     ctx.globalAlpha = opacity;
 
-    // Scale from center
-    ctx.translate(w / 2, h / 2);
+    // Apply Transformation
+    ctx.translate(w / 2 + translateX, h / 2);
     ctx.scale(scale, scale);
     ctx.translate(-w / 2, -h / 2);
 

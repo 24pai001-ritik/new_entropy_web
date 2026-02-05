@@ -1,0 +1,71 @@
+﻿npx : C:\Users\DELL\D
+ownloads\rl-agentic-a
+i-for-msmes (9)\node_
+modules\ts-node\dist\
+index.js:851
+At line:1 char:1
++ npx ts-node server/
+test-gemini.ts > 
+model_list_final.txt 
+2>&1
++ ~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo   
+           : NotSpe  
+  cified: (C:\User   
+ s\DELL\D...st\in    
+dex.js:851:Strin    
+g) [], RemoteExc    
+eption
+    + FullyQualified 
+   ErrorId : Native  
+  CommandError
+ 
+            return 
+old(m, filename);
+                   ^
+Error 
+[ERR_REQUIRE_ESM]: 
+require() of ES 
+Module C:\Users\DELL\
+Downloads\rl-agentic-
+ai-for-msmes (9)\node
+_modules\node-fetch\s
+rc\index.js from C:\U
+sers\DELL\Downloads\r
+l-agentic-ai-for-msme
+s (9)\server\test-gem
+ini.ts not supported.
+Instead change the 
+require of index.js 
+in C:\Users\DELL\Down
+loads\rl-agentic-ai-f
+or-msmes (9)\server\t
+est-gemini.ts to a 
+dynamic import() 
+which is available 
+in all CommonJS 
+modules.
+    at require.extens
+ions.<computed> [as 
+.js] (C:\Users\DELL\D
+ownloads\rl-agentic-a
+i-for-msmes (9)\node_
+modules\ts-node\dist\
+index.js:851:20)
+    at 
+Object.<anonymous> (C
+:\Users\DELL\Download
+s\rl-agentic-ai-for-m
+smes (9)\server\test-
+gemini.ts:7:38)
+    at m._compile (C:
+\Users\DELL\Downloads
+\rl-agentic-ai-for-ms
+mes (9)\node_modules\
+ts-node\dist\index.js
+:857:29) {
+  code: 
+'ERR_REQUIRE_ESM'
+}

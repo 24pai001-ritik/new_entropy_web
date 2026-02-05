@@ -1,7 +1,7 @@
 (function () {
     const script = document.currentScript;
     const chatbotId = script.getAttribute('data-chatbot-id');
-    const apiUrl = script.getAttribute('data-api-url') || 'http://localhost:5000';
+    const apiUrl = script.getAttribute('data-api-url') || 'http://localhost:8000';
 
     const container = document.createElement('div');
     container.id = 'gemini-chatbot-container';

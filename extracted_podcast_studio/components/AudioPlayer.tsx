@@ -15,14 +15,24 @@ interface AudioPlayerProps {
   script: string;
   captions: Caption[];
   logo: string | null;
+  firstImage: string | null;
+  lastImage: string | null;
+  brandColors: {
+    primary: string;
+    secondary: string;
+    text: string;
+    accent: string;
+  };
   contentFormat: ContentFormat;
   impactfulImages?: any[];
 }
 
+
 export const extraVisualizers = ['dna', 'neuralNet', 'galaxy', 'landscape', 'ripple', 'hexGrid', 'newsRadar', 'string', 'flower', 'digitalRain'];
 export const rlSketchVisualizers = ["drawRLGridworldVisualizer", "drawPolicyArrowsVisualizer", "drawNeuralNetworkGraphVisualizer", "drawQTableHeatmapVisualizer", "drawRobotOutlineVisualizer", "drawTigerStripesVisualizer", "drawStateTransitionGraphVisualizer"];
 
-export const AudioPlayer: React.FC<AudioPlayerProps> = ({ audioBuffer, onReset, aspectRatio, topic, captions, logo, contentFormat, impactfulImages }) => {
+export const AudioPlayer: React.FC<AudioPlayerProps> = ({ audioBuffer, onReset, aspectRatio, topic, captions, logo, firstImage, lastImage, brandColors, contentFormat, impactfulImages }) => {
+
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const audioElRef = useRef<HTMLAudioElement | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -41,6 +51,10 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = ({ audioBuffer, onReset, 
   const visualizerModeRef = useRef<VisualizerMode>('auto');
   const captionStyleRef = useRef<CaptionStyle>('boxed');
   const logoImgRef = useRef<HTMLImageElement | null>(null);
+  const firstImgRef = useRef<HTMLImageElement | null>(null);
+  const lastImgRef = useRef<HTMLImageElement | null>(null);
+  const brandColorsRef = useRef(brandColors);
+
   const hueRef = useRef(0);
   const particlesRef = useRef<Particle[]>([]);
   const impactfulImagesRef = useRef<any[]>([]);
@@ -56,6 +70,8 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = ({ audioBuffer, onReset, 
   useEffect(() => { topicRef.current = topic; }, [topic]);
   useEffect(() => { visualizerModeRef.current = visualizerMode; }, [visualizerMode]);
   useEffect(() => { captionStyleRef.current = captionStyle; }, [captionStyle]);
+  useEffect(() => { brandColorsRef.current = brandColors; }, [brandColors]);
+
 
   useEffect(() => {
     if (impactfulImages) {
@@ -78,6 +94,23 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = ({ audioBuffer, onReset, 
       img.onload = () => { logoImgRef.current = img; };
     } else { logoImgRef.current = null; }
   }, [logo]);
+
+  useEffect(() => {
+    if (firstImage) {
+      const img = new Image();
+      img.src = firstImage;
+      img.onload = () => { firstImgRef.current = img; };
+    } else { firstImgRef.current = null; }
+  }, [firstImage]);
+
+  useEffect(() => {
+    if (lastImage) {
+      const img = new Image();
+      img.src = lastImage;
+      img.onload = () => { lastImgRef.current = img; };
+    } else { lastImgRef.current = null; }
+  }, [lastImage]);
+
 
   useEffect(() => {
     const audio = new Audio();
@@ -141,16 +174,22 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = ({ audioBuffer, onReset, 
 
     hueRef.current = (hueRef.current + 0.5) % 360;
     const baseHue = (hueRef.current + hueOffset) % 360;
+    const brand = brandColorsRef.current;
+
+    // Adjust hue if brand primary color is available (conceptual mapping)
+    // For now, we'll priority use brand colors in visualizers, but allow hue for dynamic effects.
+
     const w = canvas.width;
     const h = canvas.height;
 
     // Draw Background
     const bgGrad = ctx.createRadialGradient(w / 2, h / 2, 0, w / 2, h / 2, w * 0.85);
-    bgGrad.addColorStop(0, `hsl(${baseHue}, 60%, 5%)`);
-    bgGrad.addColorStop(0.5, `hsl(${(baseHue + 40) % 360}, 50%, 8%)`);
-    bgGrad.addColorStop(1, `hsl(${(baseHue + 80) % 360}, 60%, 4%)`);
+    bgGrad.addColorStop(0, brand.primary + '11'); // Subtle glow
+    bgGrad.addColorStop(0.5, brand.secondary + '05');
+    bgGrad.addColorStop(1, '#05070a');
     ctx.fillStyle = bgGrad;
     ctx.fillRect(0, 0, w, h);
+
 
     if (analyserRef.current) {
       const bufferLength = analyserRef.current.frequencyBinCount;
@@ -207,8 +246,20 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = ({ audioBuffer, onReset, 
 
     // Captions & Logo
     const activeCaption = captionsRef.current.find(c => time >= c.start && time <= c.end);
-    if (activeCaption) Visualizer.drawCaptions(ctx, activeCaption, time, w, h, captionStyleRef.current, baseHue);
-    else Visualizer.drawTitleCard(ctx, topicRef.current, w, h, baseHue);
+    if (activeCaption) Visualizer.drawCaptions(ctx, activeCaption, time, w, h, captionStyleRef.current, baseHue, brand);
+    else Visualizer.drawTitleCard(ctx, topicRef.current, w, h, baseHue, brand);
+
+    // Draw First (Hook) Image - First 4 seconds
+    if (time < 4 && firstImgRef.current) {
+      Visualizer.drawImpactfulImage(ctx, firstImgRef.current, time, 0, 4, w, h);
+    }
+
+    // Draw Last (Closure) Image - Last 5 seconds
+    const duration = audioBuffer.duration;
+    if (time > duration - 5 && lastImgRef.current) {
+      Visualizer.drawImpactfulImage(ctx, lastImgRef.current, time, duration - 5, duration, w, h);
+    }
+
 
     // Draw Impactful Images (Reels/Shorts)
     const activeImpactImg = impactfulImagesRef.current.find(img => time >= img.start && time <= img.end);
@@ -234,14 +285,16 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = ({ audioBuffer, onReset, 
     try {
       const blob = await renderVideoToBlob({
         audioBuffer, captions, topic, visualizerMode, captionStyle, aspectRatio, logo,
+        firstImage, lastImage, brandColors, impactfulImages,
         onProgress: (p) => setRenderProgress(p)
       });
+
       const url = URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url;
       a.download = `podcast_${topic.replace(/\s+/g, '_').slice(0, 20)}.mp4`;
       a.click();
-      URL.revokeObjectURL(url);
+      setTimeout(() => URL.revokeObjectURL(url), 60000);
     } catch (e) { alert("Export failed."); }
     finally { setIsRendering(false); setRenderProgress(0); }
   };
@@ -253,7 +306,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = ({ audioBuffer, onReset, 
     a.href = url;
     a.download = `podcast_audio_${topic.replace(/\s+/g, '_').slice(0, 20)}.wav`;
     a.click();
-    URL.revokeObjectURL(url);
+    setTimeout(() => URL.revokeObjectURL(url), 60000);
   };
 
   const getAspectRatioStyle = () => {

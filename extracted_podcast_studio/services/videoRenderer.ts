@@ -41,6 +41,14 @@ interface RenderOptions {
     captionStyle: CaptionStyle;
     aspectRatio: string;
     logo: string | null;
+    firstImage: string | null;
+    lastImage: string | null;
+    brandColors: {
+        primary: string;
+        secondary: string;
+        text: string;
+        accent: string;
+    };
     impactfulImages?: any[];
     onProgress: (percent: number) => void;
 }
@@ -53,6 +61,9 @@ export const renderVideoToBlob = async ({
     captionStyle,
     aspectRatio,
     logo,
+    firstImage,
+    lastImage,
+    brandColors,
     impactfulImages,
     onProgress
 }: RenderOptions): Promise<Blob> => {
@@ -90,6 +101,29 @@ export const renderVideoToBlob = async ({
             logoBitmap = await createImageBitmap(blob);
         } catch (e) {
             console.warn("Failed to load logo for video rendering", e);
+        }
+    }
+
+    // Load Brand Bitmaps (First/Last)
+    let firstBitmap: ImageBitmap | null = null;
+    if (firstImage) {
+        try {
+            const resp = await fetch(firstImage);
+            const blob = await resp.blob();
+            firstBitmap = await createImageBitmap(blob);
+        } catch (e) {
+            console.warn("Failed to load first image for video rendering", e);
+        }
+    }
+
+    let lastBitmap: ImageBitmap | null = null;
+    if (lastImage) {
+        try {
+            const resp = await fetch(lastImage);
+            const blob = await resp.blob();
+            lastBitmap = await createImageBitmap(blob);
+        } catch (e) {
+            console.warn("Failed to load last image for video rendering", e);
         }
     }
 
@@ -183,19 +217,22 @@ export const renderVideoToBlob = async ({
             }
         }
 
+        const interleavedData = new Float32Array(len * 2);
+        const ch0 = chunkBuffer.getChannelData(0);
+        const ch1 = chunkBuffer.getChannelData(1);
+
+        for (let j = 0; j < len; j++) {
+            interleavedData[j * 2] = ch0[j];
+            interleavedData[j * 2 + 1] = ch1[j];
+        }
+
         const audioData = new AudioData({
             format: 'f32',
             sampleRate: TARGET_SAMPLE_RATE,
             numberOfFrames: len,
             numberOfChannels: 2,
             timestamp: (i / TARGET_SAMPLE_RATE) * 1_000_000, // microseconds
-            data: new Float32Array(chunkBuffer.length * 2).map((_, idx) => {
-                const ch0 = chunkBuffer.getChannelData(0);
-                const ch1 = chunkBuffer.getChannelData(1);
-                const frameIndex = Math.floor(idx / 2);
-                const channel = idx % 2;
-                return channel === 0 ? ch0[frameIndex] : ch1[frameIndex];
-            })
+            data: interleavedData
         });
         audioEncoder.encode(audioData);
         audioData.close();
@@ -272,15 +309,33 @@ export const renderVideoToBlob = async ({
                 // Captions
                 const activeCaption = captions.find(c => time >= c.start && time <= c.end);
                 if (activeCaption) {
-                    Visualizer.drawCaptions(ctx, activeCaption, time, width, height, captionStyle, hue);
+                    Visualizer.drawCaptions(ctx, activeCaption, time, width, height, captionStyle, hue, brandColors);
                 } else {
-                    Visualizer.drawTitleCard(ctx, topic, width, height, hue);
+                    Visualizer.drawTitleCard(ctx, topic, width, height, hue, brandColors);
                 }
 
-                // Impactful Images
-                const activeImpactImg = impactfulImages?.find(img => time >= img.start && time <= img.end);
-                if (activeImpactImg && impactBitmaps.has(activeImpactImg.url)) {
-                    Visualizer.drawImpactfulImage(ctx, impactBitmaps.get(activeImpactImg.url)!, time, activeImpactImg.start, activeImpactImg.end, width, height);
+                // Impactful Images & Brand Sequence
+                let imageDrawn = false;
+                if (firstBitmap && time <= 2) {
+                    Visualizer.drawImpactfulImage(ctx, firstBitmap, time, 0, 2, width, height, "scale");
+                    imageDrawn = true;
+                } else if (lastBitmap && time >= duration - 2) {
+                    Visualizer.drawImpactfulImage(ctx, lastBitmap, time, duration - 2, duration, width, height, "fade");
+                    imageDrawn = true;
+                } else {
+                    const activeImpactImg = impactfulImages?.find(img => time >= img.start && time <= img.end);
+                    if (activeImpactImg && impactBitmaps.has(activeImpactImg.url)) {
+                        Visualizer.drawImpactfulImage(ctx, impactBitmaps.get(activeImpactImg.url)!, time, activeImpactImg.start, activeImpactImg.end, width, height);
+                        imageDrawn = true;
+                    }
+                }
+
+                // Fallback: If no image is drawn and it's a reel, use brand-colored text emphasis
+                const isReel = aspectRatio === '9:16';
+                if (!imageDrawn && isReel) {
+                    // We'll handle this inside drawCaptions or by adding a brand background accent
+                    ctx.fillStyle = brandColors.primary + "1A"; // 10% opacity
+                    ctx.fillRect(0, 0, width, height);
                 }
 
                 // Draw Logo
