@@ -29,6 +29,54 @@ const FeatureCard = ({ item, index }: { item: any; index: number;[key: string]: 
     </div>
   </motion.div>
 );
+const getProductPath = (id: string) => {
+  switch (id) {
+    case 'chatbot-maker': return '/converse';
+    case 'video-gen': return '/video-maker';
+    case 'research-helper': return '/products/research-helper';
+    default: return `/products/${id}`;
+  }
+};
+
+const ProductCard = ({ product, i }: { product: any; i: number;[key: string]: any }) => (
+  <Link to={getProductPath(product.id)} className="group relative block">
+    <motion.div
+      initial={{ opacity: 0, scale: 0.95 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.8, delay: i * 0.1 }}
+      className="glass p-16 h-[600px] rounded-[4rem] flex flex-col justify-between overflow-hidden relative group-hover:border-[#4FD1FF]/50 transition-all duration-700"
+    >
+      <div className="absolute top-0 right-0 p-10 opacity-5 group-hover:opacity-20 transition-opacity">
+        {product.id === 'chatbot-maker' && <Repeat className="w-40 h-40" />}
+        {product.id === 'video-gen' && <Zap className="w-40 h-40" />}
+        {product.id === 'research-helper' && <ShieldCheck className="w-40 h-40" />}
+      </div>
+
+      <div className="z-10">
+        <div className="w-16 h-16 rounded-2xl bg-[#4FD1FF]/10 flex items-center justify-center text-[#4FD1FF] mb-12 shadow-[0_0_20px_rgba(79,209,255,0.2)]">
+          {product.id === 'chatbot-maker' && <Repeat className="w-8 h-8" />}
+          {product.id === 'video-gen' && <Zap className="w-8 h-8" />}
+          {product.id === 'research-helper' && <ShieldCheck className="w-8 h-8" />}
+        </div>
+        <h3 className="text-4xl font-black mb-6 uppercase tracking-tighter leading-none">{product.title}</h3>
+        <p className="text-gray-400 text-lg leading-relaxed font-semibold opacity-70 group-hover:opacity-100 transition-opacity">
+          {product.description}
+        </p>
+      </div>
+
+      <div className="mt-auto flex items-center justify-between z-10">
+        <div className="flex flex-col gap-2">
+          <span className="text-[9px] font-black uppercase tracking-widest text-gray-500">Deployment Logic</span>
+          <span className="text-xs font-black uppercase text-white">V.4 Sigma Node</span>
+        </div>
+        <div className="w-14 h-14 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-[#4FD1FF] group-hover:text-black transition-all group-hover:border-transparent">
+          <ArrowRight className="w-6 h-6" />
+        </div>
+      </div>
+    </motion.div>
+  </Link>
+);
 
 const Home: React.FC = () => {
   const [isReady, setIsReady] = useState(false);
@@ -90,9 +138,9 @@ const Home: React.FC = () => {
               transition={{ duration: 0.8, delay: 0.9 }}
               className="flex flex-wrap gap-6"
             >
-              <button className="group relative bg-white text-black px-12 py-5 rounded-2xl font-black text-xs tracking-[0.4em] overflow-hidden transition-all shadow-2xl hover:bg-[#4FD1FF] uppercase">
+              <Link to="/converse" className="group relative bg-white text-black px-12 py-5 rounded-2xl font-black text-xs tracking-[0.4em] overflow-hidden transition-all shadow-2xl hover:bg-[#4FD1FF] uppercase inline-flex items-center">
                 Initialize Scan <ArrowRight className="w-4 h-4 inline ml-2 group-hover:translate-x-2 transition-transform" />
-              </button>
+              </Link>
               <Link to="/pricing" className="glass px-12 py-5 rounded-2xl font-black text-xs tracking-[0.4em] uppercase hover:bg-white/10 transition-all flex items-center">
                 Explore Nodes
               </Link>
@@ -137,52 +185,16 @@ const Home: React.FC = () => {
             <h2 className="text-4xl md:text-7xl font-black tracking-tighter uppercase">Autonomous Nodes.</h2>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {PRODUCTS.map((product, i) => (
-              <Link key={product.id} to={`/products/${product.id}`} className="group relative block">
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.95 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.8, delay: i * 0.1 }}
-                  className="glass p-16 h-[600px] rounded-[4rem] flex flex-col justify-between overflow-hidden relative group-hover:border-[#4FD1FF]/50 transition-all duration-700"
-                >
-                  <div className="absolute top-0 right-0 p-10 opacity-5 group-hover:opacity-20 transition-opacity">
-                    {product.id === 'chatbot-maker' && <Repeat className="w-40 h-40" />}
-                    {product.id === 'video-gen' && <Zap className="w-40 h-40" />}
-                    {product.id === 'research-helper' && <ShieldCheck className="w-40 h-40" />}
-                  </div>
-
-                  <div className="z-10">
-                    <div className="w-16 h-16 rounded-2xl bg-[#4FD1FF]/10 flex items-center justify-center text-[#4FD1FF] mb-12 shadow-[0_0_20px_rgba(79,209,255,0.2)]">
-                      {product.id === 'chatbot-maker' && <Repeat className="w-8 h-8" />}
-                      {product.id === 'video-gen' && <Zap className="w-8 h-8" />}
-                      {product.id === 'research-helper' && <ShieldCheck className="w-8 h-8" />}
-                    </div>
-                    <h3 className="text-4xl font-black mb-6 uppercase tracking-tighter leading-none">{product.title}</h3>
-                    <p className="text-gray-400 text-lg leading-relaxed font-semibold opacity-70 group-hover:opacity-100 transition-opacity">
-                      {product.description}
-                    </p>
-                  </div>
-
-                  <div className="mt-auto flex items-center justify-between z-10">
-                    <div className="flex flex-col gap-2">
-                      <span className="text-[9px] font-black uppercase tracking-widest text-gray-500">Deployment Logic</span>
-                      <span className="text-xs font-black uppercase text-white">V.4 Sigma Node</span>
-                    </div>
-                    <div className="w-14 h-14 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-[#4FD1FF] group-hover:text-black transition-all group-hover:border-transparent">
-                      <ArrowRight className="w-6 h-6" />
-                    </div>
-                  </div>
-                </motion.div>
-              </Link>
+              <ProductCard key={product.id} product={product} i={i} />
             ))}
           </div>
-        </div>
-      </section>
+        </div >
+      </section >
 
       {/* FINAL CALL - Cinematic Ending */}
-      <section className="py-60 px-6 text-center overflow-hidden">
+      < section className="py-60 px-6 text-center overflow-hidden" >
         <div className="container mx-auto">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
@@ -199,10 +211,10 @@ const Home: React.FC = () => {
             </Link>
           </motion.div>
         </div>
-      </section>
+      </section >
 
       <div className="h-40" />
-    </div>
+    </div >
   );
 };
 

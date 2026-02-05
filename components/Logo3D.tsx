@@ -21,16 +21,17 @@ const Shard: React.FC<{ index: number; controls: any; size: number; isHovered: b
   ];
 
   const initialProps = useMemo(() => {
-    const angle = Math.random() * Math.PI * 2;
-    const radius = size * (1.5 + Math.random() * 1.5);
+    // Use deterministic positioning based on index for consistency
+    const angle = (index / 14) * Math.PI * 2; // Assumes shardsCount = 14
+    const radius = size * 3;
     return {
       x: Math.cos(angle) * radius,
       y: Math.sin(angle) * radius,
-      rotate: Math.random() * 2000,
+      rotate: index * 100,
       opacity: 0,
       scale: 0.1,
     };
-  }, [size]);
+  }, [size, index]);
 
   return (
     <motion.div
@@ -47,7 +48,8 @@ const Shard: React.FC<{ index: number; controls: any; size: number; isHovered: b
         marginTop: -(size * 0.04),
         background: colors[index % colors.length],
         clipPath: shapes[index % shapes.length],
-        boxShadow: isHovered ? '0 0 30px rgba(79,209,255,0.6)' : '0 0 8px rgba(79,209,255,0.1)',
+        boxShadow: isHovered ? '0 0 30px rgba(79,209,255,0.8)' : '0 0 15px rgba(79,209,255,0.4)',
+        filter: 'brightness(1.3)',
         zIndex: 1,
         willChange: 'transform',
       }}
@@ -107,14 +109,19 @@ const Logo3D: React.FC<Logo3DProps> = ({ size = 300, triggerLoop = false }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   const runEntropySnap = useCallback(async (isInitial = false) => {
-    await controls.start((i) => ({
-      x: (Math.random() - 0.5) * size * (isInitial ? 6 : 3),
-      y: (Math.random() - 0.5) * size * (isInitial ? 6 : 3),
-      rotate: Math.random() * (isInitial ? 5000 : 1080),
-      opacity: isInitial ? 0 : 0.3,
-      scale: isInitial ? 0 : 0.4,
-      transition: { duration: isInitial ? 0 : 0.8, ease: "circOut" }
-    }));
+    // Deterministic explosion pattern
+    await controls.start((i) => {
+      const explosionAngle = (i / shardsCount) * Math.PI * 2 + Math.PI / 4;
+      const explosionRadius = size * (isInitial ? 3 : 1.5);
+      return {
+        x: Math.cos(explosionAngle) * explosionRadius,
+        y: Math.sin(explosionAngle) * explosionRadius,
+        rotate: i * (isInitial ? 360 : 180),
+        opacity: isInitial ? 0 : 0.3,
+        scale: isInitial ? 0 : 0.4,
+        transition: { duration: isInitial ? 0 : 0.8, ease: "circOut" }
+      };
+    });
 
     await controls.start((i) => {
       const angle = (i / shardsCount) * Math.PI * 2;
@@ -182,7 +189,7 @@ const Logo3D: React.FC<Logo3DProps> = ({ size = 300, triggerLoop = false }) => {
 
       {/* 3. Neural Shard Cloud */}
       <motion.div
-        className="absolute inset-0 z-0"
+        className="absolute inset-0 z-30"
         animate={{ rotate: isHovered ? 360 : -360 }}
         transition={{ duration: isHovered ? 20 : 100, repeat: Infinity, ease: "linear" }}
       >
@@ -260,10 +267,10 @@ const Logo3D: React.FC<Logo3DProps> = ({ size = 300, triggerLoop = false }) => {
             key={i}
             initial={{ opacity: 0, scale: 0 }}
             animate={{
-              opacity: [0, 0.8, 0],
+              opacity: [0, 1, 0],
               x: (Math.random() - 0.5) * size * 2.5,
               y: (Math.random() - 0.5) * size * 2.5,
-              scale: [0, 3, 0],
+              scale: [0, 4, 0],
             }}
             exit={{ opacity: 0 }}
             transition={{
@@ -271,8 +278,8 @@ const Logo3D: React.FC<Logo3DProps> = ({ size = 300, triggerLoop = false }) => {
               repeat: Infinity,
               delay: Math.random() * 2
             }}
-            className="absolute w-2 h-2 bg-[#4FD1FF] rounded-full blur-[3px]"
-            style={{ top: '50%', left: '50%' }}
+            className="absolute w-2 h-2 bg-[#4FD1FF] rounded-full blur-[2px]"
+            style={{ top: '50%', left: '50%', zIndex: 50 }}
           />
         ))}
       </AnimatePresence>
