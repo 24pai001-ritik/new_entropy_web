@@ -1,8 +1,8 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useRef, useState, useEffect, lazy, Suspense } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { ArrowRight, Activity, Repeat, Layout, ShieldCheck, Zap } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import Logo3D from '../components/Logo3D';
+const Logo3D = lazy(() => import('../components/Logo3D'));
 import { PRODUCTS, WHY_US } from '../constants';
 
 const FeatureCard = ({ item, index }: { item: any; index: number;[key: string]: any }) => (
@@ -70,7 +70,9 @@ const Home: React.FC = () => {
               transition={{ duration: 1, delay: 0.6 }}
               className="lg:hidden flex justify-center py-8"
             >
-              <Logo3D size={320} triggerLoop={true} />
+              <Suspense fallback={<div className="w-80 h-80 animate-pulse bg-[#4FD1FF]/5 rounded-full" />}>
+                <Logo3D size={320} triggerLoop={true} />
+              </Suspense>
             </motion.div>
 
             <motion.p
@@ -98,7 +100,9 @@ const Home: React.FC = () => {
           </div>
 
           <div className="hidden lg:flex justify-center items-center relative scale-110 lg:scale-125">
-            <Logo3D size={550} triggerLoop={true} />
+            <Suspense fallback={<div className="w-[550px] h-[550px] animate-pulse bg-[#4FD1FF]/5 rounded-full" />}>
+              <Logo3D size={550} triggerLoop={true} />
+            </Suspense>
           </div>
         </div>
       </section>
