@@ -220,11 +220,11 @@ const Logo3D: React.FC<Logo3DProps> = ({ size = 300, triggerLoop = false }) => {
           className="w-48 h-48 object-contain relative z-10 brightness-110 drop-shadow-[0_0_30px_rgba(79,209,255,0.6)]"
           animate={{
             y: [0, -8, 0],
-            rotate: isHovered ? [0, 4, -4, 0] : 0,
+            rotate: [0, 360],
           }}
           transition={{
             y: { duration: 6, repeat: Infinity, ease: "easeInOut" },
-            rotate: { duration: 5, repeat: Infinity, ease: "easeInOut" },
+            rotate: { duration: 25, repeat: Infinity, ease: "linear" },
           }}
           onError={(e) => {
             e.currentTarget.style.display = 'none';

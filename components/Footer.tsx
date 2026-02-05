@@ -21,7 +21,13 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           <div className="col-span-1 md:col-span-1">
             <div className="flex items-center gap-4 mb-6">
-              <img src="entropy_logo.png" alt="Entropy AI" className="w-8 h-8 object-contain brightness-110" />
+              <motion.img
+                src="entropy_logo.png"
+                alt="Entropy AI"
+                className="w-8 h-8 object-contain brightness-110"
+                animate={{ rotate: 360 }}
+                transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
+              />
               <h3 className="text-xl font-black tracking-tighter uppercase">Entropy AI</h3>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-6 font-medium opacity-80">
@@ -58,14 +64,14 @@ const Footer: React.FC = () => {
             <h4 className="font-black text-[10px] uppercase tracking-[0.4em] mb-6 opacity-50">The Neural Feed</h4>
             <p className="text-xs font-medium text-gray-400 mb-4 opacity-80">Stay updated with structural AI breakthroughs.</p>
             <form onSubmit={handleSubscribe} className="relative">
-              <input 
-                type="email" 
+              <input
+                type="email"
                 placeholder="Identity@node.com"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 className="w-full glass bg-white/5 rounded-xl px-4 py-3 text-[10px] font-black uppercase tracking-widest focus:outline-none focus:ring-1 focus:ring-[#4FD1FF] transition-all border-white/5"
               />
-              <button 
+              <button
                 type="submit"
                 className="absolute right-2 top-2 p-1.5 bg-white text-black rounded-md hover:bg-[#4FD1FF] transition-colors"
               >
@@ -74,7 +80,7 @@ const Footer: React.FC = () => {
             </form>
             <AnimatePresence>
               {subscribed && (
-                <motion.p 
+                <motion.p
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0 }}

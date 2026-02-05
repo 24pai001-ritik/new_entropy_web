@@ -5,10 +5,12 @@ import { motion, useScroll, useMotionValueEvent, AnimatePresence } from 'framer-
 import { Menu, X, Sparkles } from 'lucide-react';
 
 const LogoIcon = () => (
-  <img
+  <motion.img
     src="entropy_logo.png"
     alt="Entropy AI Logo"
     className="w-8 h-8 object-contain"
+    animate={{ rotate: 360 }}
+    transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
     onError={(e) => {
       e.currentTarget.style.display = 'none';
       const parent = e.currentTarget.parentElement;
